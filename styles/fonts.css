@@ -48,11 +48,12 @@ p {
 
 a {
     text-decoration: none;
-    color:#005500;
+    color:rgb(59, 89, 152);
 }
 
-a:visited {
-    color:#002200;
+a:hover {
+    background-color:rgb(59, 89, 152);
+    color:white;
 }
 
 .feed_item {

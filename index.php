@@ -34,10 +34,9 @@
                 feed.load(function(result) {
                     if (!result.error) {
                         var feed = result.feed;
-                        container.append('<div class="feed_title"><a href="' + feed.link + '">' + feed.title + "<\/div>");
-                            $.each(feed.entries, function(idx, item){
-                                container.append('<div class="feed_item"><a href="' + item.link + '">' + item.title + '<\/a><\/div>');
-                            });
+                        $.each(feed.entries, function(idx, item){
+                            container.append('<div class="feed_item"><a href="' + item.link + '">' + item.title + '<\/a><\/div>');
+                        });
                        }
                 });
             };
@@ -49,7 +48,7 @@
 </head>
 
 <body>
-  <div id="doc2" class="yui-t7">
+  <div id="doc" class="yui-t7">
     <div id="hd" role="banner">
       <h2>sandesh247's home page</h2>
     </div>
@@ -106,20 +105,20 @@
           <h4>More online</h4>
 
           <ul>
-            <li>My <a href="http://sandesh247.blogspot.com/">blog</a>.</li>
+            <li>My <a rel="me" href="http://sandesh247.blogspot.com/">blog</a>.</li>
 
             <li>A few lines of <a href=
             "http://code.google.com/p/sandesh247-lab">code</a>.</li>
 
             <li><font color="#FF0000" size="1"><b>new</b></font> Newer repository
-            <a href="http://github.com/sandesh247">here</a>.</li>
+            <a rel="me" href="http://github.com/sandesh247">here</a>.</li>
 
             <li><a href="http://del.icio.us/sandesh247/blogs">Blogs</a> I visit.</li>
 
             <li>Meet some <a href="http://del.icio.us/sandesh247/friends">of my
             friends</a>.</li>
 
-            <li>Some <a href="http://picasaweb.google.com/sandesh247">photos</a>.</li>
+            <li>Some <a rel="me" href="http://picasaweb.google.com/sandesh247">photos</a>.</li>
 
             <li>Random <a href="stuff">Stuff</a>.</li>
           </ul>
@@ -133,17 +132,28 @@
       <div class="yui-gb">
         <div class="yui-u first">
           <div class="rss_reader" uri=
-          "http://sandesh247.blogspot.com/feeds/posts/default?alt=rss"></div>
+          "http://sandesh247.blogspot.com/feeds/posts/default?alt=rss">
+            <div class="feed_title">
+              <a rel="me" href="http://sandesh247.blogspot.com/">Blog</a>
+            </div>
+          </div>
         </div>
 
         <div class="yui-u">
           <div class="rss_reader" uri=
-          "http://identi.ca/api/statuses/user_timeline/sandesh247.rss"></div>
+          "http://identi.ca/api/statuses/user_timeline/sandesh247.rss">
+            <div class="feed_title">
+              <a rel="me" href="http://identi.ca/sandesh247">µBlog</a>
+            </div>
+          </div>
         </div>
 
         <div class="yui-u">
           <div class="rss_reader" uri=
           "http://www.google.com/reader/public/atom/user%2F16614168867282228082%2Fstate%2Fcom.google%2Fbroadcast">
+            <div class="feed_title">
+              <a rel="me" href="http://www.google.com/reader/shared/16614168867282228082">Google Reader shared items</a>
+            </div>
           </div>
         </div>
       </div>
