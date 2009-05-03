@@ -1,0 +1,41 @@
+p {
+    margin-bottom: 15px;
+} 
+
+ul {
+    margin-left : 15px;
+    margin-bottom: 15px;
+}
+
+#hd {
+    border:           1px solid #e0e0e0; 
+    border-top: none;
+    background: rgb(239, 239, 239) none repeat scroll 0% 0%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.feed_item {
+    background: #efefef;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+.feed_title {
+    background: #efefef;
+    padding: 5px;
+    border-bottom:          1px solid #e0e0e0;
+}
+
+.rss_reader {
+    height: 100%;
+    border:          1px solid #e0e0e0;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
