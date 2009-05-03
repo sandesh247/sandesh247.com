@@ -36,7 +36,6 @@
                         var feed = result.feed;
                         container.append('<div class="feed_title"><a href="' + feed.link + '">' + feed.title + "<\/div>");
                             $.each(feed.entries, function(idx, item){
-                                console.log(item);
                                 container.append('<div class="feed_item"><a href="' + item.link + '">' + item.title + '<\/a><\/div>');
                             });
                        }
@@ -115,7 +114,7 @@
             <li><font color="#FF0000" size="1"><b>new</b></font> Newer repository
             <a href="http://github.com/sandesh247">here</a>.</li>
 
-            <li><a href="http://del.icio.us/sandesh247/blogs">Blogs</a> I visit</li>
+            <li><a href="http://del.icio.us/sandesh247/blogs">Blogs</a> I visit.</li>
 
             <li>Meet some <a href="http://del.icio.us/sandesh247/friends">of my
             friends</a>.</li>
