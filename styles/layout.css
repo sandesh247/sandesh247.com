@@ -2,6 +2,10 @@ p {
     margin-bottom: 15px;
 } 
 
+blockquote {
+    text-indent: -0.8em;
+}
+
 ul {
     margin-left : 15px;
     margin-bottom: 15px;
@@ -10,7 +14,6 @@ ul {
 #hd {
     border:           1px solid #e0e0e0; 
     border-top: none;
-    background: rgb(239, 239, 239) none repeat scroll 0% 0%;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -20,23 +23,35 @@ ul {
 }
 
 .feed_item {
-    background: #efefef;
     padding: 2px;
     padding-left: 10px;
-    margin-top:1px;
+    border-top: 1px solid white;
 }
 
 .feed_title {
-    background: #efefef;
     padding: 5px;
     border-bottom:          1px solid #e0e0e0;
 }
 
 .rss_reader {
-    height: 100%;
     border:          1px solid #e0e0e0;
+}
+
+.rss_reader > .items {
+    height: 250px;
+    overflow: auto;
 }
 
 h4 {
     margin-bottom: 15px;
+}
+
+.section {
+  padding : 15px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.bghilite {
+    background: #efefef;
 }

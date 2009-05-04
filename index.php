@@ -11,9 +11,6 @@
   "http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" />
   <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
   <link rel="stylesheet" type="text/css" href="styles/layout.css" />
-  <script type="text/javascript" src=
-  "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js">
-</script>
   <script type="text/javascript" src="http://www.google.com/jsapi">
 </script>
   <script type="text/javascript">
@@ -28,14 +25,15 @@
         $(".rss_reader").each(function(elem){
             var container = $(this);
             var uri = container.attr('uri');
+            var itemContatiner = container.find('.items');
             if(uri) {
                 var feed = new google.feeds.Feed(uri);
-                feed.setNumEntries(7);
+                feed.setNumEntries(10);
                 feed.load(function(result) {
                     if (!result.error) {
                         var feed = result.feed;
                         $.each(feed.entries, function(idx, item){
-                            container.append('<div class="feed_item"><a href="' + item.link + '">' + item.title + '<\/a><\/div>');
+                            itemContatiner.append('<div class="feed_item"><a href="' + item.link + '">' + item.title + '<\/a><\/div>');
                         });
                        }
                 });
@@ -49,7 +47,7 @@
 
 <body>
   <div id="doc" class="yui-t7">
-    <div id="hd" role="banner">
+    <div id="hd" role="banner" class="bghilite">
       <h2>sandesh247's home page</h2>
     </div>
 
@@ -99,7 +97,7 @@
           <h4>On this site</h4>
 
           <ul>
-            <li>A few good <a href="quotes">words</a>.</li>
+            <li>A few good <a href="words.php">words</a>.</li>
           </ul>
 
           <h4>More online</h4>
@@ -110,15 +108,16 @@
             <li>A few lines of <a href=
             "http://code.google.com/p/sandesh247-lab">code</a>.</li>
 
-            <li><font color="#FF0000" size="1"><b>new</b></font> Newer repository
-            <a rel="me" href="http://github.com/sandesh247">here</a>.</li>
+            <li><font color="#FF0000" size="1"><b>new</b></font> Newer repository <a rel=
+            "me" href="http://github.com/sandesh247">here</a>.</li>
 
             <li><a href="http://del.icio.us/sandesh247/blogs">Blogs</a> I visit.</li>
 
             <li>Meet some <a href="http://del.icio.us/sandesh247/friends">of my
             friends</a>.</li>
 
-            <li>Some <a rel="me" href="http://picasaweb.google.com/sandesh247">photos</a>.</li>
+            <li>Some <a rel="me" href=
+            "http://picasaweb.google.com/sandesh247">photos</a>.</li>
 
             <li>Random <a href="stuff">Stuff</a>.</li>
           </ul>
@@ -131,29 +130,78 @@
 
       <div class="yui-gb">
         <div class="yui-u first">
-          <div class="rss_reader" uri=
+          <div class="rss_reader bghilite" uri=
           "http://sandesh247.blogspot.com/feeds/posts/default?alt=rss">
             <div class="feed_title">
               <a rel="me" href="http://sandesh247.blogspot.com/">Blog</a>
             </div>
+
+            <div class="items"></div>
           </div>
         </div>
 
         <div class="yui-u">
-          <div class="rss_reader" uri=
+          <div class="rss_reader bghilite" uri=
           "http://identi.ca/api/statuses/user_timeline/sandesh247.rss">
             <div class="feed_title">
-              <a rel="me" href="http://identi.ca/sandesh247">µBlog</a>
+              <a rel="me" href="http://identi.ca/sandesh247">&Acirc;&micro;Blog</a>
             </div>
+
+            <div class="items"></div>
           </div>
         </div>
 
         <div class="yui-u">
-          <div class="rss_reader" uri=
+          <div class="rss_reader bghilite" uri=
           "http://www.google.com/reader/public/atom/user%2F16614168867282228082%2Fstate%2Fcom.google%2Fbroadcast">
-            <div class="feed_title">
-              <a rel="me" href="http://www.google.com/reader/shared/16614168867282228082">Google Reader shared items</a>
+          <div class="feed_title">
+              <a rel="me" href=
+              "http://www.google.com/reader/shared/16614168867282228082">Google Reader
+              shared items</a>
             </div>
+
+            <div class="items"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="yui-g">
+        <h4 class="center">The arts</h4>
+      </div>
+
+      <div class="yui-gb">
+        <div class="yui-u first">
+          <div class="rss_reader bghilite" uri=
+          "http://ws.audioscrobbler.com/1.0/user/sandesh247/recenttracks.rss">
+            <div class="feed_title">
+              <a rel="me" href="http://www.last.fm/user/sandesh247">Listening to</a>
+            </div>
+
+            <div class="items"></div>
+          </div>
+        </div>
+
+        <div class="yui-u">
+          <div class="rss_reader bghilite" uri=
+          "http://www.goodreads.com/review/list_rss/2279676?key=8f5672c21f4fefcaa3e605c052403a3aaf88885e&amp;shelf=%23ALL%23">
+          <div class="feed_title">
+              <a rel="me" href="http://www.goodreads.com/review/list/2279676">Currently
+              reading</a>
+            </div>
+
+            <div class="items"></div>
+          </div>
+        </div>
+
+        <div class="yui-u">
+          <div class="rss_reader bghilite" uri=
+          "http://photos.googleapis.com/data/feed/base/user/sandesh247?kind=album&amp;alt=rss">
+          <div class="feed_title">
+              <a rel="me" href="http://picasaweb.google.com/sandesh247/">Recent
+              photos</a>
+            </div>
+
+            <div class="items"></div>
           </div>
         </div>
       </div>
