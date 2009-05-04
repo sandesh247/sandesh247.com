@@ -144,7 +144,7 @@
           <div class="rss_reader bghilite" uri=
           "http://identi.ca/api/statuses/user_timeline/sandesh247.rss">
             <div class="feed_title">
-              <a rel="me" href="http://identi.ca/sandesh247">&Acirc;&micro;Blog</a>
+              <a rel="me" href="http://identi.ca/sandesh247">&micro;Blog</a>
             </div>
 
             <div class="items"></div>
