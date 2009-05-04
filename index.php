@@ -3,8 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta name="generator" content=
-  "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
+  <meta name="generator" content="Bluefish 1.0.7"/>
 
   <title>sandesh247.com</title>
   <link rel="stylesheet" type="text/css" href=
@@ -56,8 +55,8 @@
         <div class="yui-u first main">
           <!-- TOP MAIN -->
 
-          <p>Here's my <a href="sandeshs_professional_resume.pdf">resume</a>. You may
-          want the <a href="sandesh247_resume.tex">source</a>.</p>
+          <p>Here's my <a href="resume/sandeshs_resume.pdf">resume</a>. You may
+          want the <a href="resume/sandeshs_resume.tex">source</a>.</p>
 
           <p>I am currently working at <a href=
           "http://www.neorithm.com/">neorithm</a>.</p>
