@@ -210,13 +210,11 @@
 
       <div class="yui-gb">
         <div class="yui-u first center">
-          <a href="http://github.com/sandesh247/sandesh247.com/tree/master">Site
-          source.</a>
+          <a href="http://github.com/sandesh247/sandesh247.com/tree/master">Site sources.</a>
         </div>
 
         <div class="yui-u center">
-          <a href="http://github.com/sandesh247/sandesh247.com/issues">Bugs on this
-          site.</a>
+          <a href="http://github.com/sandesh247/sandesh247.com/issues">Report bugs on this site.</a>
         </div>
 
         <div class="yui-u center">
