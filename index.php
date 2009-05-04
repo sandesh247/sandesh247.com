@@ -58,10 +58,9 @@
           <p>Here's my <a href="resume/sandeshs_resume.pdf">resume</a>. You may
           want the <a href="resume/sandeshs_resume.tex">source</a>.</p>
 
-          <p>I am currently working at <a href=
-          "http://www.neorithm.com/">neorithm</a>.</p>
+          <p>I currently work at <a href="http://www.neorithm.com/">neorithm</a>.</p>
 
-          <p>I've previously worked @:</p>
+          <p>I've previously worked at:</p>
 
           <ul>
             <li><a href="http://www.finacus.co.in/">Finacus</a></li>
