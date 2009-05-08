@@ -2,13 +2,6 @@
 		<ul class="xoxo">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
 
-			<li id="pages">
-				<h3><?php _e( 'Pages', 'sandbox' ) ?></h3>
-				<ul>
-<?php wp_list_pages('title_li=&sort_column=menu_order' ) ?>
-				</ul>
-			</li>
-
 			<li id="categories">
 				<h3><?php _e( 'Categories', 'sandbox' ) ?></h3>
 				<ul>

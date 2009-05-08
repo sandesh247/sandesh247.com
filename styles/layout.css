@@ -1,4 +1,4 @@
-p {
+p, pre, img, embed {
     margin-bottom: 15px;
 } 
 
@@ -54,4 +54,12 @@ h4 {
 
 .bghilite {
     background: #efefef;
+}
+
+pre {
+    width : 100%;
+    overflow : auto;
+    padding: 5px;
+    background: #efefef;
+    border-bottom:          1px solid #e0e0e0;
 }

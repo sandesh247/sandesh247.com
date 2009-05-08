@@ -9,7 +9,10 @@ TAGS: sandbox, microformats, hcard, hatom, xoxo, widgets, blank slate, starter t
 */
 
 /* Two-column with sidebar on left from the /examples/ folder  */
-@import url('examples/2c-l.css');
+@import url('../../../../styles/fonts.css');
+@import url('../../../../styles/layout.css');
+@import url('../../../../styles/prettify.css');
+@import url('examples/2c-r.css');
 
 /* Just some example content */
 div.skip-link {
