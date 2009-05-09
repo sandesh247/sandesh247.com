@@ -21,6 +21,12 @@ right:1em;
 top:1em;
 }
 
+div.post {
+padding-bottom: 15px;
+margin-bottom: 15px;
+border-bottom:          1px solid #e0e0e0;
+}
+
 div#menu {
 background:#EEE;
 height:1.5em;
@@ -184,10 +190,6 @@ margin:0.2em 0 0;
 padding:0;
 }
 
-div.sidebar ul ul {
-margin:0 0 0 1em;
-}
-
 div.sidebar ul ul li {
 list-style:disc;
 margin:0;
@@ -213,7 +215,7 @@ input#author,input#email,input#url,div.navigation div {
 width:50%;
 }
 
-div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
+div.gallery * /*,div.sidebar div,div.sidebar h3,div.sidebar ul*/ {
 margin:0;
 padding:0;
 }

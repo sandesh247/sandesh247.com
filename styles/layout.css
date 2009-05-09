@@ -6,26 +6,21 @@ blockquote {
     text-indent: -0.8em;
 }
 
-ul {
-    margin-left : 15px;
-    margin-bottom: 15px;
-}
-
 #hd {
-    border:           1px solid #e0e0e0; 
-    border-top: none;
     padding: 10px;
     margin-bottom: 20px;
+    border-top: 1px none white;
 }
 
 .center {
     text-align: center;
 }
 
-.feed_item {
+.feed_item, .items li {
     padding: 2px;
     padding-left: 10px;
     border-top: 1px solid white;
+    list-style-type: none;
 }
 
 .feed_title {
@@ -34,7 +29,6 @@ ul {
 }
 
 .rss_reader {
-    border:          1px solid #e0e0e0;
 }
 
 .rss_reader > .items {
@@ -54,6 +48,21 @@ h4 {
 
 .bghilite {
     background: #efefef;
+}
+
+.hiliteimp {
+    background-color:rgb(59, 89, 152);
+    border: 1px none lightblue;
+    border-bottom: 1px solid rgb(39, 59, 132);
+    color: white;
+}
+
+.hiliteimp a {
+    color: white;
+}
+
+.hiliteimp a:hover {
+    text-decoration : underline;
 }
 
 pre {
