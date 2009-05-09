@@ -46,7 +46,7 @@
 
 <body>
   <div id="doc" class="yui-t7">
-    <div id="hd" role="banner" class="bghilite">
+    <div id="hd" role="banner" class="hiliteimp center">
       <h2>sandesh247's home page</h2>
     </div>
 
@@ -128,37 +128,37 @@
 
       <div class="yui-gb">
         <div class="yui-u first">
-          <div class="rss_reader bghilite" uri=
+          <div class="rss_reader" uri=
           "http://sandesh247.blogspot.com/feeds/posts/default?alt=rss">
-            <div class="feed_title">
+            <div class="hiliteimp feed_title">
               <a rel="me" href="http://sandesh247.blogspot.com/">Blog</a>
             </div>
 
-            <div class="items"></div>
+            <div class="items bghilite"></div>
           </div>
         </div>
 
         <div class="yui-u">
-          <div class="rss_reader bghilite" uri=
+          <div class="rss_reader" uri=
           "http://identi.ca/api/statuses/user_timeline/sandesh247.rss">
-            <div class="feed_title">
+            <div class="hiliteimp feed_title">
               <a rel="me" href="http://identi.ca/sandesh247">&micro;Blog</a>
             </div>
 
-            <div class="items"></div>
+            <div class="items bghilite"></div>
           </div>
         </div>
 
         <div class="yui-u">
-          <div class="rss_reader bghilite" uri=
+          <div class="rss_reader" uri=
           "http://www.google.com/reader/public/atom/user%2F16614168867282228082%2Fstate%2Fcom.google%2Fbroadcast">
-          <div class="feed_title">
+          <div class="hiliteimp feed_title">
               <a rel="me" href=
               "http://www.google.com/reader/shared/16614168867282228082">Google Reader
               shared items</a>
             </div>
 
-            <div class="items"></div>
+            <div class="items bghilite"></div>
           </div>
         </div>
       </div>
@@ -169,37 +169,37 @@
 
       <div class="yui-gb">
         <div class="yui-u first">
-          <div class="rss_reader bghilite" uri=
+          <div class="rss_reader" uri=
           "http://ws.audioscrobbler.com/1.0/user/sandesh247/recenttracks.rss">
-            <div class="feed_title">
+            <div class="hiliteimp feed_title">
               <a rel="me" href="http://www.last.fm/user/sandesh247">Listening to</a>
             </div>
 
-            <div class="items"></div>
+            <div class="items bghilite"></div>
           </div>
         </div>
 
         <div class="yui-u">
-          <div class="rss_reader bghilite" uri=
+          <div class="rss_reader" uri=
           "http://www.goodreads.com/review/list_rss/2279676?key=8f5672c21f4fefcaa3e605c052403a3aaf88885e&amp;shelf=%23ALL%23">
-          <div class="feed_title">
+          <div class="hiliteimp feed_title">
               <a rel="me" href="http://www.goodreads.com/review/list/2279676">Currently
               reading</a>
             </div>
 
-            <div class="items"></div>
+            <div class="items bghilite"></div>
           </div>
         </div>
 
         <div class="yui-u">
-          <div class="rss_reader bghilite" uri=
+          <div class="rss_reader" uri=
           "http://photos.googleapis.com/data/feed/base/user/sandesh247?kind=album&amp;alt=rss">
-          <div class="feed_title">
+          <div class="hiliteimp feed_title">
               <a rel="me" href="http://picasaweb.google.com/sandesh247/">Recent
               photos</a>
             </div>
 
-            <div class="items"></div>
+            <div class="items bghilite"></div>
           </div>
         </div>
       </div>

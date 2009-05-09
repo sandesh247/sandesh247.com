@@ -1,6 +1,6 @@
 body {
     font-family: Bitstream Vera Serif, Trebuchet MS, serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 15px;
 }
 
@@ -11,38 +11,38 @@ ul, li
 }
 
 h1 {
-    font-size: 48px;
-    line-height: 60px;
-}
-
-h2 {
     font-size: 36px;
     line-height: 45px;
 }
 
-h3 {
+h2 {
     font-size: 24px;
     line-height: 30px;
 }
 
-h4 {
+h3 {
     font-size: 21px;
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 18px;
     line-height: 30px;
     text-decoration:underline;
 }
 
 h5 {
-    font-size: 18px;
-    line-height: 30px;
-}
-
-h6 {
     font-size: 16px;
     line-height: 30px;
 }
 
-p, blockquote {
+h6 {
     font-size: 14px;
+    line-height: 30px;
+}
+
+p, blockquote {
+    font-size: 12px;
     line-height: 15px;
 }
 
@@ -57,7 +57,7 @@ a:hover {
 }
 
 .feed_item {
-    font-size: 80%;
+    font-size: 90%;
 }
 
 .feed_title {
