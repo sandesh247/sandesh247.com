@@ -2,6 +2,13 @@
 		<ul class="xoxo">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
 
+			<li id="rss-links">
+				<div class="hiliteimp feed_title"><?php _e( 'RSS Feeds', 'sandbox' ) ?></div>
+				<ul class="items bghilite">
+                                <li><a href="http://feeds2.feedburner.com/OneMeOneKeyboard" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0; margin:0px"/></a>&nbsp;<a href="http://feeds2.feedburner.com/OneMeOneKeyboard" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></li>
+				</ul>
+			</li>
+
 			<li id="categories">
 				<div class="hiliteimp feed_title"><?php _e( 'Categories', 'sandbox' ) ?></div>
 				<ul class="items bghilite">
@@ -32,14 +39,6 @@
 						<input type="submit" class="button" value="<?php _e( 'Find', 'sandbox' ) ?>" tabindex="2" />
 					</div>
 				</form>
-			</li>
-
-			<li id="rss-links">
-				<div class="hiliteimp feed_title"><?php _e( 'RSS Feeds', 'sandbox' ) ?></div>
-				<ul class="items bghilite">
-					<li><a href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All posts', 'sandbox' ) ?></a></li>
-					<li><a href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All comments', 'sandbox' ) ?></a></li>
-				</ul>
 			</li>
 
 			<li id="meta">

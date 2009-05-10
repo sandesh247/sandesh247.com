@@ -101,7 +101,7 @@
           <h4>More online</h4>
 
           <ul>
-            <li>My <a rel="me" href="http://sandesh247.blogspot.com/">blog</a>.</li>
+            <li>My <a rel="me" href="http://sandesh247.com/journal">blog</a>.</li>
 
             <li>A few lines of <a href=
             "http://code.google.com/p/sandesh247-lab">code</a>.</li>
@@ -129,9 +129,9 @@
       <div class="yui-gb">
         <div class="yui-u first">
           <div class="rss_reader" uri=
-          "http://sandesh247.blogspot.com/feeds/posts/default?alt=rss">
+          "http://feeds2.feedburner.com/OneMeOneKeyboard">
             <div class="hiliteimp feed_title">
-              <a rel="me" href="http://sandesh247.blogspot.com/">Blog</a>
+              <a rel="me" href="http://sandesh247.com/journal">Blog</a>
             </div>
 
             <div class="items bghilite"></div>
