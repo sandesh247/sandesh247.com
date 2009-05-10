@@ -11,8 +11,8 @@
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-	<script src="../scripts/prettify.js" type="text/javascript"></script>
-	<script src="../scripts/onload.js" type="text/javascript"></script>
+	<script src="<?= get_bloginfo('url') ?>/../scripts/prettify.js" type="text/javascript"></script>
+	<script src="<?= get_bloginfo('url') ?>/../scripts/onload.js" type="text/javascript"></script>
 </head>
 
 <body class="<?php sandbox_body_class() ?>" id="doc">
