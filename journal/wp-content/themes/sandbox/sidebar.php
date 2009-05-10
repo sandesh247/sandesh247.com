@@ -9,7 +9,16 @@
 				</ul>
 			</li>
 
-			<li id="categories">
+      <li id="ublog" class="rss_reader" uri=
+          "http://identi.ca/api/statuses/user_timeline/sandesh247.rss">
+        <div class="hiliteimp feed_title">
+          <a rel="me" href="http://identi.ca/sandesh247">&micro;Blog</a>
+        </div>
+
+        <div class="items bghilite"></div>
+      </li>
+      
+      <li id="categories">
 				<div class="hiliteimp feed_title"><?php _e( 'Categories', 'sandbox' ) ?></div>
 				<ul class="items bghilite">
 <?php wp_list_categories('title_li=&show_count=0&hierarchical=1') ?> 

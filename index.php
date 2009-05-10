@@ -10,38 +10,8 @@
   "http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" />
   <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
   <link rel="stylesheet" type="text/css" href="styles/layout.css" />
-  <script type="text/javascript" src="http://www.google.com/jsapi">
-</script>
-  <script type="text/javascript">
-//<![CDATA[
-    // Load jQuery
-    var proxy = "http://localhost/sandesh247.com/utils/proxy.php?u=";
-
-    google.load("feeds", "1");
-    google.load("jquery", "1");
-
-    function initialize() {
-        $(".rss_reader").each(function(elem){
-            var container = $(this);
-            var uri = container.attr('uri');
-            var itemContatiner = container.find('.items');
-            if(uri) {
-                var feed = new google.feeds.Feed(uri);
-                feed.setNumEntries(10);
-                feed.load(function(result) {
-                    if (!result.error) {
-                        var feed = result.feed;
-                        $.each(feed.entries, function(idx, item){
-                            itemContatiner.append('<div class="feed_item"><a href="' + item.link + '">' + item.title + '<\/a><\/div>');
-                        });
-                       }
-                });
-            };
-        });
-    }
-    google.setOnLoadCallback(initialize);
-  //]]>
-  </script>
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="scripts/onload.js"></script>
 </head>
 
 <body>
@@ -101,7 +71,7 @@
           <h4>More online</h4>
 
           <ul>
-            <li>My <a rel="me" href="http://sandesh247.com/journal">blog</a>.</li>
+            <li>My <a rel="me" href="./journal/">blog</a>.</li>
 
             <li>A few lines of <a href=
             "http://code.google.com/p/sandesh247-lab">code</a>.</li>

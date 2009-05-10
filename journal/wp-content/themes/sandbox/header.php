@@ -11,18 +11,8 @@
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-	<script src="/scripts/prettify.js" type="text/javascript"></script>
-	<script src="/scripts/code-hilite-hack.js" type="text/javascript"></script>
-	<script type="text/javascript">
-  //<![CDATA[
-    google.load("jquery", "1");
-
-    function initialize() {
-      window.applyHiliteHack();
-    }
-    google.setOnLoadCallback(initialize);
-  //]]>
-  </script>
+	<script src="../scripts/prettify.js" type="text/javascript"></script>
+	<script src="../scripts/onload.js" type="text/javascript"></script>
 </head>
 
 <body class="<?php sandbox_body_class() ?>" id="doc">
@@ -35,5 +25,8 @@
 	</div><!--  #header -->
 
 	<div id="access">
-		<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'sandbox' ) ?>"><?php _e( 'Skip to content', 'sandbox' ) ?></a></div>
+		<div class="skip-link">
+		  <a href="../" title="<?php _e( 'Home', 'sandbox' ) ?>"><?php _e( 'Home', 'sandbox' ) ?></a> |
+		  <a href="#content" title="<?php _e( 'Skip to content', 'sandbox' ) ?>"><?php _e( 'Skip to content', 'sandbox' ) ?></a>
+		</div>
 	</div><!-- #access -->
