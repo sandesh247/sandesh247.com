@@ -30,6 +30,10 @@ p, blockquote {
 .feed_title {
     padding: 5px;
     border-bottom:          1px solid #e0e0e0;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-radius-topleft: 3px;
+    -webkit-border-radius-topright: 3px;
 }
 
 .rss_reader {
@@ -67,6 +71,12 @@ h4 {
 
 .hiliteimp a:hover {
     text-decoration : underline;
+}
+
+.entry-date, .entry-meta {
+    color: gray;
+    line-height: 30px;
+    margin-top: 0px;
 }
 
 pre {
