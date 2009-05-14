@@ -75,8 +75,8 @@ h4 {
 
 .entry-date, .entry-meta {
     color: gray;
-    line-height: 30px;
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 pre {
