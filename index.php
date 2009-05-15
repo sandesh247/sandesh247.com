@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div id="doc" class="yui-t7">
+  <div id="doc2" class="yui-t7">
     <div id="hd" role="banner" class="hiliteimp center">
       <h2>sandesh247's home page</h2>
     </div>
@@ -28,21 +28,32 @@
           <p>Here's my <a href="resume/sandeshs_resume.pdf">resume</a>. You may
           want the <a href="resume/sandeshs_resume.tex">source</a>.</p>
 
-          <p>I currently work at <a href="http://www.neorithm.com/">neorithm</a>.</p>
+          <p>You may want to visit my <a rel="me" href="./journal/">blog</a>, I am usually more active there.</p>
 
-          <p>I've previously worked at:</p>
-
+          <p>I currently work at <a href="http://www.neorithm.com/">neorithm</a>. I've previously worked at:</p>
           <ul>
             <li><a href="http://www.finacus.co.in/">Finacus</a></li>
-
             <li><a href="http://www.amdocs.com/">Amdocs</a><br /></li>
           </ul>
 
-          <h4>Projects</h4>
+          <!-- spacer -->
+          <p />
+
+          <h4>Code</h4>
 
           <ul>
             <li><a href="http://tddb.sourceforge.net/">TDDB</a>.</li>
+
+            <li>A few miscellaneous <a href=
+            "http://code.google.com/p/sandesh247-lab">projects</a>.</li>
+
+            <li><font color="#FF0000" size="1"><b>new</b></font> Newer repository <a rel=
+            "me" href="http://github.com/sandesh247">here</a>.</li>
+
           </ul>
+
+          <!-- spacer -->
+          <p />
 
           <h4>Bookmarks</h4>
 
@@ -71,13 +82,7 @@
           <h4>More online</h4>
 
           <ul>
-            <li>My <a rel="me" href="./journal/">blog</a>.</li>
-
-            <li>A few lines of <a href=
-            "http://code.google.com/p/sandesh247-lab">code</a>.</li>
-
-            <li><font color="#FF0000" size="1"><b>new</b></font> Newer repository <a rel=
-            "me" href="http://github.com/sandesh247">here</a>.</li>
+            <li>My <a href="http://www.linkedin.com/in/sandesh247" rel="me">LinkedIn profile.</a></li>
 
             <li><a href="http://del.icio.us/sandesh247/blogs">Blogs</a> I visit.</li>
 

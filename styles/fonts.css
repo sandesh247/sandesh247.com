@@ -58,6 +58,7 @@ a:hover {
 
 .feed_item {
     font-size: 90%;
+    line-height: 15px;
 }
 
 .feed_title {

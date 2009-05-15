@@ -15,7 +15,7 @@
 	<script src="<?= get_bloginfo('url') ?>/../scripts/onload.js" type="text/javascript"></script>
 </head>
 
-<body class="<?php sandbox_body_class() ?>" id="doc">
+<body class="<?php sandbox_body_class() ?>" id="doc2">
 
 <div id="wrapper" class="hfeed">
 
@@ -26,7 +26,7 @@
 
 	<div id="access">
 		<div class="skip-link">
-		  <a href="../" title="<?php _e( 'Home', 'sandbox' ) ?>"><?php _e( 'Home', 'sandbox' ) ?></a> |
+		  <a href="../" title="<?php _e( 'Home', 'sandbox' ) ?>"><?php _e( 'Home', 'sandbox' ) ?></a> <br />
 		  <a href="#content" title="<?php _e( 'Skip to content', 'sandbox' ) ?>"><?php _e( 'Skip to content', 'sandbox' ) ?></a>
 		</div>
 	</div><!-- #access -->
