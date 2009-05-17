@@ -5,7 +5,10 @@
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
 	<link rel="stylesheet" type="text/css" href=
   "http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" />
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" />
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" />
+	<link rel="stylesheet" type="text/css" href="<?= get_bloginfo('url') ?>/../styles/prettify.css" />
+	<link rel="stylesheet" type="text/css" href="<?= get_bloginfo('url') ?>/../styles/layout.css" />
+	<link rel="stylesheet" type="text/css" href="<?= get_bloginfo('url') ?>/../styles/fonts.css" />
 <?php wp_head() // For plugins ?>
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
