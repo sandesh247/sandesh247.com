@@ -43,7 +43,7 @@
 		for ($i = 1;$i<=$totalPages;$i++){
 			if($pageNo !=$i){
 				?>
-				<a style="text-decoration:none;" href="<?php echo site_url();?>/wp-admin/options-general.php?page=wp-blogger-to-wordpress/wp-blogger-report.php&pageNo=<?php echo $i ?>" title="Import"><?php echo $i ?> | </a>
+				<a style="text-decoration:none;" href="<?php echo site_url();?>/wp-admin/options-general.php?page=blogger-to-wordpress/wp-blogger-report.php&pageNo=<?php echo $i ?>" title="Import"><?php echo $i ?> | </a>
 				<?php
 			} else {
 				echo " ".$i." | ";

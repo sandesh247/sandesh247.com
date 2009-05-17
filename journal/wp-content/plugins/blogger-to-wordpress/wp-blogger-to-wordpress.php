@@ -3,7 +3,7 @@
 Plugin Name: Blogger to Wordpress
 Plugin URI: http://arunmvishnu.com/blogger-to-wordpress
 Description: Blogger to Wordpress helps you to redirect from your blogspot post to the corresponding wordpress post(Imported from blogger).
-Version: 1.1
+Version: 1.2
 Author: Arun Vishnu
 Author URI: http://arunmvishnu.com
 */
@@ -102,7 +102,7 @@ function validateForm(){
 	return true;
 }
 </script>
-			<li><h4> You seems to have <?php echo $noOfPosts ?> posts imported from your Blogger account. You can check the <a target="_blank" href="<?php echo site_url();?>/wp-admin/options-general.php?page=wp-blogger-to-wordpress/wp-blogger-report.php" title="Import">Report</a>.</h4></li>
+			<li><h4> You seems to have <?php echo $noOfPosts ?> posts imported from your Blogger account. You can check the <a target="_blank" href="<?php echo site_url();?>/wp-admin/options-general.php?page=blogger-to-wordpress/wp-blogger-report.php" title="Import">Report</a>.</h4></li>
 			<li>You need to put a JavaScript code in your blogger template header to redirect to your new site. Enter the details and get the Javascript.
 			</li>
 			<li>
