@@ -72,6 +72,7 @@
 
         <div class="yui-u sidebar">
           <!-- Top Sidebar -->
+          <img src="http://www.gravatar.com/avatar/f37a7393ce728b072aca55535f759e9f" style="float: right;"/>
 
           <h4>On this site</h4>
 
@@ -82,7 +83,7 @@
           <h4>More online</h4>
 
           <ul>
-            <li>My <a href="http://www.linkedin.com/in/sandesh247" rel="me">LinkedIn profile.</a></li>
+            <li>My <a href="http://www.linkedin.com/in/sandesh247" rel="me">LinkedIn profile</a>.</li>
 
             <li><a href="http://del.icio.us/sandesh247/blogs">Blogs</a> I visit.</li>
 
