@@ -33,3 +33,8 @@ Theme Name: Thematic Mod
     clear:both;
     padding:22px 0 22px 0;
 }
+
+p {
+	text-align: justify;
+	text-justify: newspaper;
+}
