@@ -3,7 +3,7 @@ Contributors: fd
 Donate link: http://flagrantdisregard.com/feedburner/
 Tags: feedburner, redirect, rss, feed
 Requires at least: 2.0
-Tested up to: 2.7.1
+Tested up to: 2.9.2
 Stable tag: trunk
 
 Redirects the main feed and optionally the comments feed seamlessly and
@@ -23,3 +23,12 @@ done.
 1. Copy fdfeedburner.php into wp-content/plugins
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Configure your feed from the new Feedburner submenu
+
+== Changelog ==
+
+= 1.42 =
+* Localized configuration panel, added Hungarian translation thanks to Sepp Toth.
+* German translation by Linus Metzler (limenet.ch)
+
+= 1.41 =
+* Added option to not redirect search result feeds

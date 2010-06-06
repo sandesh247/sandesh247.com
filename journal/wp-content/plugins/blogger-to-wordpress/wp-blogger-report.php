@@ -1,5 +1,5 @@
 <div class="wrap">
-<h2>Report.</h2>
+<h2>Imported posts from blogger.</h2>
 <?php 
 	global $wpdb;
 	$blogUrl = $_REQUEST['blogUrl'];
@@ -32,7 +32,9 @@
 				<li><?php echo $j ?> | <a href="<?php echo $postUrl;?>" title="<?php echo $postTitle; ?>"><?php echo $postTitle; ?></a></li>
 			<?php
 			} else {
-				echo "<li>Error!</li>";
+				?>
+				<li><?php echo $j ?> | Error!</li>
+			<?php
 			}
 		}
 		?>
@@ -43,7 +45,7 @@
 		for ($i = 1;$i<=$totalPages;$i++){
 			if($pageNo !=$i){
 				?>
-				<a style="text-decoration:none;" href="<?php echo site_url();?>/wp-admin/options-general.php?page=blogger-to-wordpress/wp-blogger-report.php&pageNo=<?php echo $i ?>" title="Import"><?php echo $i ?> | </a>
+				<a style="text-decoration:none;" href="<?php echo site_url();?>/wp-admin/options-general.php?page=blogger-to-wordpress/wp-blogger-to-wordpress.php&pageNo=<?php echo $i ?>" title="Import"><?php echo $i ?> | </a>
 				<?php
 			} else {
 				echo " ".$i." | ";

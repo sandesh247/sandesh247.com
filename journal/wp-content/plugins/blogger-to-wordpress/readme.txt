@@ -2,7 +2,7 @@
 Contributors: Arun Vishnu
 Tags: blogger, blogspot, redirection, 
 Requires at least: 1.5
-Tested up to: 2.7.1
+Tested up to: 2.8.5
 Stable tag: trunk
 
 Blogger to Wordpress helps you to redirect from your blogspot post to the corresponding wordpress post(Imported from blogger).
