@@ -1,19 +1,25 @@
 /*   
 Theme Name: Thematic Mod
-Template: thematic
 */
 
-/* Reset browser defaults */
 @import url('../thematic/style.css');
- 
-/* Apply basic typography styles */
-@import url('typography.css');
- 
-/* Apply a basic layout */
-@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Reset browser defaults */
+/* @import url('../thematic/library/styles/reset.css'); */
  
 /* Prepare theme for plugins */
-@import url('../thematic/library/styles/plugins.css');
+/* @import url('../thematic/library/styles/plugins.css'); */
+
+/* Apply basic image styles */
+/* @import url('library/styles/images.css'); */
+
+/* Apply a basic layout */
+/* @import url('../thematic/library/layouts/2c-r-fixed.css'); */
+
+/* Apply a basic layout */
+/* @import url('../thematic/library/styles/default.css'); */
+
+@import url('../../../../styles/colors.css');
  
 /* Un-comment the line below to set a 12 column grid with 18px line-height */
 /*body { background:url(../thematic/images/960_grid_12_col_21px_height.gif) repeat-y top center; }*/

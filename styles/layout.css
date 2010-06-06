@@ -1,88 +1,82 @@
-p, pre, img, embed, object {
-    margin-bottom: 15px;
-} 
-
-blockquote {
-    text-indent: -0.8em;
+p,pre,img,embed,object {
+	margin-bottom: 15px;
 }
 
-p, blockquote {
-    text-align: justify;
+blockquote {
+	text-indent: -0.8em;
+}
+
+p,blockquote {
+	text-align: justify;
 }
 
 #hd {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-top: 1px none white;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-top: 1px none white;
 }
 
 .center {
-    text-align: center;
+	text-align: center;
 }
 
-.feed_item, .items li {
-    padding: 2px;
-    padding-left: 10px;
-    border-top: 1px solid white;
-    border-bottom:          1px solid #e0e0e0;
-    list-style-type: none;
+.feed_item,.items li {
+	padding: 2px;
+	padding-left: 10px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid #e0e0e0;
+	list-style-type: none;
 }
 
 .feed_title {
-    padding: 5px;
-    border-bottom:          1px solid #e0e0e0;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-topright: 3px;
-    -webkit-border-radius-topleft: 3px;
-    -webkit-border-radius-topright: 3px;
+	padding: 5px;
+	border-bottom: 1px solid #e0e0e0;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-radius-topleft: 3px;
+	-webkit-border-radius-topright: 3px;
 }
 
 .rss_reader {
+	
 }
 
-.rss_reader > .items {
-    height: 250px;
-    overflow: auto;
+.rss_reader>.items {
+	height: 250px;
+	overflow: auto;
 }
 
 h4 {
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 .section {
-  padding : 15px;
-  border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 30px;
+	padding: 15px;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 30px;
 }
 
 .bghilite {
-    background-color: #efefef;
+	background-color: #efefef;
 }
 
 .hiliteimp {
-    background-color:rgb(59, 89, 152);
-    border: 1px none lightblue;
-    border-bottom: 1px solid rgb(39, 59, 132);
-    color: white;
-}
-
-.hiliteimp a {
-    color: white;
+	text-decoration: none;
 }
 
 .hiliteimp a:hover {
-    text-decoration : underline;
+	text-decoration: underline;
 }
 
-.entry-date, .entry-meta {
-    color: gray;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.entry-date,.entry-meta {
+	color: gray;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 pre {
-    overflow : auto;
-    padding: 5px;
-    background: #efefef;
-    border-bottom:          1px solid #e0e0e0;
+	overflow: auto;
+	padding: 5px;
+	background: #efefef;
+	border-bottom: 1px solid #e0e0e0;
 }

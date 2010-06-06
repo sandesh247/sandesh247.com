@@ -48,12 +48,6 @@ p, blockquote {
 
 a {
     text-decoration: none !important;
-    color:rgb(85, 126, 192) !important;
-}
-
-a:hover {
-    background-color:rgb(102, 148, 227) !important;
-    color:white !important;
 }
 
 .feed_item {
