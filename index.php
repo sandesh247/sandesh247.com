@@ -3,13 +3,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta name="generator" content="Bluefish 1.0.7"/>
-  <META name="y_key" content="f6e15ea6949ce1e1">
   <title>sandesh247.com</title>
   <link rel="stylesheet" type="text/css" href=
   "http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" />
   <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
   <link rel="stylesheet" type="text/css" href="styles/layout.css" />
+  <link rel="stylesheet" type="text/css" href="styles/colors.css" />
   <script type="text/javascript" src="http://www.google.com/jsapi"></script>
   <script type="text/javascript" src="scripts/onload.js"></script>
 </head>
