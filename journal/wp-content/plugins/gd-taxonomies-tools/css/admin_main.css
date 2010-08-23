@@ -1,0 +1,273 @@
+h2.gdptlogopage {
+	background: transparent url(../gfx/menu32.png) no-repeat;
+	padding: 0 0 0 38px;
+	height: 32px;
+	margin: 14px 0;
+	line-height: 30px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+	border: 0;
+	font-style: normal;
+}
+
+p.sub {
+	color: #777777;
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-size: 13px;
+	font-style: italic;
+	padding: 5px 10px 15px;
+	margin: -12px;
+}
+
+.clear { clear: both; }
+
+.frontleft { width: 500px; }
+
+.frontright { width: 500px; }
+
+.gdpttitle div.edition {
+	float: left;
+	width: 48px;
+	height: 16px;
+	margin-left: 3px;
+	margin-top: 18px;
+}
+
+.gdpttitle div.edition.lite { background: transparent url(../gfx/lite.png) no-repeat; }
+
+.gdpttitle div.edition.pro { background: transparent url(../gfx/pro.png) no-repeat; }
+
+.gdpttitle div.gdtitle { float: left; margin-top: 7px; }
+
+.gdpttitle span {
+	font-size: 14px;
+	vertical-align: 14px;
+	color: red;
+	font-weight: bold;
+	margin-left: -44px;
+}
+
+.gdrgrid .table {
+	background: #F9F9F9 none repeat scroll 0 0;
+	border-bottom: 1px solid #ECECEC;
+	border-top: 1px solid #ECECEC;
+	margin: 0 -9px 10px;
+	padding: 0 10px;
+	table-layout: fixed;
+}
+
+.gdrgrid div.inside { margin: 10px; }
+
+.gdrgrid p.sub {
+	color: #777777;
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-size: 13px;
+	font-style: italic;
+	padding: 5px 10px 15px;
+	margin: -12px;
+}
+
+.gdrgrid table { width: 100%; }
+
+.gdrgrid table tr.first th { color: #990000; font-weight: bold; }
+
+.gdrgrid table tr.first th, .gdrgrid table tr.first td { border-top: medium none; }
+
+.gdrgrid td {
+	border-top: 1px solid #ECECEC;
+	padding: 2px 0;
+	white-space: nowrap;
+	font-size: 18px;
+}
+
+.gdrgrid td.b, .gdrgrid th.first {
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-size: 16px;
+	padding-right: 6px;
+	white-space: nowrap;
+	text-align: right;
+}
+
+.gdrgrid td.first, .gdrgrid td.last { width: 1px; }
+
+.gdrgrid td.options { text-align: right; white-space: normal; }
+
+.gdrgrid td.t { white-space: normal; }
+
+.gdrgrid td.t, .gdrgrid th {
+	color: #777777;
+	font-size: 12px;
+	padding-right: 12px;
+	padding-top: 6px;
+}
+
+.gdrgrid th {
+	text-align: left;
+	background-color: #ECECEC;
+	padding: 3px 5px;
+}
+
+#gdptlogo {
+	background: transparent url(../gfx/logo.png) no-repeat;
+	height: 64px;
+	padding-left: 72px;
+	margin-top: 10px;
+}
+
+#gdptlogo .gdpttitle {
+	font-size: 30px;
+	font-style: normal;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+	padding: 0 0 3px 0;
+	border-bottom: 1px solid #DADADA;
+	color: #696969;
+}
+
+#gdptlogo h3 {
+	margin: 3px 0 0 0;
+	font-style: italic;
+	font-weight: normal;
+}
+
+a.ttoption {
+	padding: 1px 3px 2px;
+}
+
+a.ttoption-del {
+	color: #cc0000;
+	padding: 1px 3px 2px;
+}
+
+a.ttoption-del:hover {
+	background-color: #cc0000;
+	color: white;
+}
+
+.inputbutton{
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border: 1px solid #696969 !important;
+	cursor: pointer;
+	font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Verdana,sans-serif;
+	font-size: 12px;
+	line-height: 1.5em;
+	padding: 3px 5px;
+	text-decoration: none;
+	color: #696969;
+	background-color: #e6e6fa !important;
+	width: 120px;
+	text-align: center;
+}
+
+.inputred {
+	font-weight: bold;
+	color: red !important;
+	border: 1px solid #8b0000 !important;
+}
+
+.gdrgrid h3 {
+	background: #333333 url(../gfx/jquery-ui-1.7/ui-bg_diagonals-thick_8_333333_40x40.png) repeat scroll 50% 50%;
+	color: white;
+	text-shadow: none;
+}
+
+.gdsr .widefat thead, .gdsr .previewtable thead {
+	background: #333333 url(../gfx/jquery-ui-1.7/ui-bg_diagonals-thick_8_333333_40x40.png) repeat scroll 50% 50%;
+}
+
+.gdsr .widefat thead .alt, .gdsr .previewtable thead .alt {
+	background:inherit !important;
+}
+
+.gdsr .widefat thead tr th {
+	background: none;
+	color: white;
+	text-shadow: none;
+	font-size: 13px;
+}
+
+.ui-tabs .ui-tabs-nav li a { padding: .2em .6em; }
+
+.ui-tabs .ui-tabs-panel { padding: .4em; }
+
+.ui-datepicker.ui-widget { font-size: 0.9em; line-height: 1.1em; }
+
+textarea, input, select { border-color: #696969; }
+
+.gdsr-table-split { margin-top: 5px; padding-top: 5px; }
+
+.gdsr-table-split, .gdsr-table-split-edit { border-top: 2px solid #660000; width: 100%; }
+
+.gdsr-table-split-edit { margin-top: 3px; padding-top: 3px; }
+
+.form-table { margin: 5px 0 0 0; }
+
+.form-table tr { background-color: #dcdcdc; }
+
+.form-table th { font-weight: bold; }
+
+.input-text-middle { width: 200px; }
+
+.input-text-short { width: 100px; }
+
+.input-text-long { width: 300px; }
+
+.input-text-extralong { width: 720px; }
+
+.form-table td, .form-table th { border-bottom: 6px solid #F9F9F9; }
+
+.gdsr .previewtable .aright { text-align: right; }
+
+.gdsr .previewtable .awidth { width: 70px; }
+
+.gdsr .previewtable td, .gdsr .previewtable th { vertical-align: middle; padding: 0px; border: 0px; }
+
+.gdsr .previewtable tr { background: none; }
+
+.gdsr .previewtable thead th { padding: 0px 5px 1px; color: white; text-shadow: 0 0px 0 #FFFFFF; }
+
+.ui-state-highlight p {
+    line-height: 100%;
+    margin: 0.8em 0;
+}
+
+.ui-dropdownchecklist {
+	height: 16px;
+	-moz-border-radius: 4px;
+	border: 1px solid #696969;
+	color: #000;
+	margin: 1px;
+	padding: 2px 0 2px 4px;
+	background: #fff url(../gfx/dropdown.png) no-repeat center right;
+}
+.ui-dropdownchecklist-hover, .ui-dropdownchecklist-active {
+	background: #fff url(../gfx/dropdown_hover.png) no-repeat center right !important;
+}
+
+.ui-dropdownchecklist-text {
+	font-size: 11px;
+	height: 15px;
+	line-height: 15px;
+	margin-right: 17px; /* background dropdown.png image */
+}
+.ui-dropdownchecklist-dropcontainer { background-color: #fff; border: 1px solid #999; }
+.ui-dropdownchecklist-item { padding: 2px; }
+.ui-dropdownchecklist-item-hover { background-color: #39f; }
+.ui-dropdownchecklist-item-disabled label { color: #ccc; }
+.ui-dropdownchecklist-item-hover .ui-dropdownchecklist-text { color: #fff; }
+.ui-dropdownchecklist-group { font-weight: bold; font-style: italic; }
+.ui-dropdownchecklist-indent { padding-left: 20px; }
+
+input {
+	border-color: #696969 !important;
+}
+
+.gdsr-major-info {
+        background-color:#F7F7F7;
+        color:#D00;
+        font-weight:bold;
+        padding:1px 6px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+}

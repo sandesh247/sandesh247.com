@@ -2,33 +2,24 @@
 		<ul class="xoxo">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
 
-			<li id="rss-links">
-				<div class="hiliteimp feed_title"><?php _e( 'RSS Feeds', 'sandbox' ) ?></div>
-				<ul class="items bghilite">
-                                <li><a href="http://feeds2.feedburner.com/OneMeOneKeyboard" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0; margin:0px"/></a>&nbsp;<a href="http://feeds2.feedburner.com/OneMeOneKeyboard" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></li>
+			<li id="pages">
+				<h3><?php _e( 'Pages', 'sandbox' ) ?></h3>
+				<ul>
+<?php wp_list_pages('title_li=&sort_column=menu_order' ) ?>
 				</ul>
 			</li>
 
-      <li id="ublog" class="rss_reader" uri=
-          "http://identi.ca/api/statuses/user_timeline/sandesh247.rss">
-        <div class="hiliteimp feed_title">
-          <a rel="me" href="http://identi.ca/sandesh247">&micro;Blog</a>
-        </div>
-
-        <div class="items bghilite"></div>
-      </li>
-      
-      <li id="categories">
-				<div class="hiliteimp feed_title"><?php _e( 'Categories', 'sandbox' ) ?></div>
-				<ul class="items bghilite">
+			<li id="categories">
+				<h3><?php _e( 'Categories', 'sandbox' ) ?></h3>
+				<ul>
 <?php wp_list_categories('title_li=&show_count=0&hierarchical=1') ?> 
 
 				</ul>
 			</li>
 
 			<li id="archives">
-				<div class="hiliteimp feed_title"><?php _e( 'Archives', 'sandbox' ) ?></div>
-				<ul class="items bghilite">
+				<h3><?php _e( 'Archives', 'sandbox' ) ?></h3>
+				<ul>
 <?php wp_get_archives('type=monthly') ?>
 
 				</ul>
@@ -41,18 +32,28 @@
 		<ul class="xoxo">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : // begin secondary sidebar widgets ?>
 			<li id="search">
-				<div class="hiliteimp feed_title"><label for="s"><?php _e( 'Search', 'sandbox' ) ?></label></div>
+				<h3><label for="s"><?php _e( 'Search', 'sandbox' ) ?></label></h3>
 				<form id="searchform" class="blog-search" method="get" action="<?php bloginfo('home') ?>">
 					<div>
-						<input id="s" name="s" type="text" class="text" value="<?php the_search_query() ?>" tabindex="1" />
+						<input id="s" name="s" type="text" class="text" value="<?php the_search_query() ?>" size="10" tabindex="1" />
 						<input type="submit" class="button" value="<?php _e( 'Find', 'sandbox' ) ?>" tabindex="2" />
 					</div>
 				</form>
 			</li>
 
+<?php wp_list_bookmarks('title_before=<h3>&title_after=</h3>&show_images=1') ?>
+
+			<li id="rss-links">
+				<h3><?php _e( 'RSS Feeds', 'sandbox' ) ?></h3>
+				<ul>
+					<li><a href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All posts', 'sandbox' ) ?></a></li>
+					<li><a href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All comments', 'sandbox' ) ?></a></li>
+				</ul>
+			</li>
+
 			<li id="meta">
-				<div class="hiliteimp feed_title"><?php _e( 'Meta', 'sandbox' ) ?></div>
-				<ul class="items bghilite">
+				<h3><?php _e( 'Meta', 'sandbox' ) ?></h3>
+				<ul>
 					<?php wp_register() ?>
 
 					<li><?php wp_loginout() ?></li>

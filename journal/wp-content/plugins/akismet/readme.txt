@@ -3,7 +3,7 @@ Contributors: matt, ryan, andy, mdawaffe, tellyworth, automattic
 Tags: akismet, comments, spam
 Requires at least: 2.0
 Tested up to: 3.0
-Stable tag: 2.2.9
+Stable tag: 2.3.0
 
 Akismet checks your comments against the Akismet web service to see if they look like spam or not.
 
@@ -16,15 +16,20 @@ Want to show off how much spam Akismet has caught for you? Just put `<?php akism
 
 See also: [WP Stats plugin](http://wordpress.org/extend/plugins/stats/).
 
-PS: You'll need a [WordPress.com API key](http://wordpress.com/api-keys/) to use it.
+PS: You'll need an [Akismet.com API key](http://akismet.com/get/) to use it.
 
 == Installation ==
 
-Upload the Akismet plugin to your blog, Activate it, then enter your [WordPress.com API key](http://wordpress.com/api-keys/).
+Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.com API key](http://akismet.com/get/).
 
 1, 2, 3: You're done!
 
 == Changelog ==
+
+* Fix "Are you sure" nonce message on config screen in WPMU
+* Fix XHTML compliance issue in sidebar widget
+* Change author link; remove some old references to WordPress.com accounts
+* Localize the widget title (core ticket #13879)
 
 = 2.2.9 =
 

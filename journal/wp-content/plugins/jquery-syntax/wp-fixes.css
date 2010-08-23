@@ -1,0 +1,17 @@
+/*
+	These are purely to fix bugs in the default configuration of WordPress
+	With the new list layout, these are probably not needed.
+*/
+
+.syntax {
+	font-size: 80%;
+}
+
+.syntax-container pre {
+	font-size: 80% !important;
+	line-height: 1.5em !important;
+}
+
+.syntax-container li.alt {
+	border-left: none;
+}

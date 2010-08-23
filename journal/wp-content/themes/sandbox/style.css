@@ -2,25 +2,20 @@
 THEME NAME: Sandbox
 THEME URI: http://www.plaintxt.org/themes/sandbox/
 DESCRIPTION: Rich with powerful and dynamic semantic class selectors, Sandbox is a canvas for CSS artists
-VERSION: 1.6
+VERSION: 1.6.1
 AUTHOR: <a href="http://andy.wordpress.com/">Andy Skelton</a> &amp; <a href="http://www.plaintxt.org/">Scott Allan Wallick</a>
 AUTHOR URI:
-TAGS: sandbox, microformats, hcard, hatom, xoxo, widgets, blank slate, starter theme, minimalist, developer
+TAGS: white, microformats, fixed-width, flexible-width, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar
 */
 
 /* Two-column with sidebar on left from the /examples/ folder  */
+@import url('examples/2c-l.css');
 
 /* Just some example content */
 div.skip-link {
 position:absolute;
 right:1em;
 top:1em;
-}
-
-div.post {
-padding-bottom: 15px;
-margin-bottom: 15px;
-border-bottom:          1px solid #e0e0e0;
 }
 
 div#menu {
@@ -186,6 +181,10 @@ margin:0.2em 0 0;
 padding:0;
 }
 
+div.sidebar ul ul {
+margin:0 0 0 1em;
+}
+
 div.sidebar ul ul li {
 list-style:disc;
 margin:0;
@@ -211,34 +210,7 @@ input#author,input#email,input#url,div.navigation div {
 width:50%;
 }
 
-div.gallery * /*,div.sidebar div,div.sidebar h3,div.sidebar ul*/ {
+div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
 margin:0;
 padding:0;
 }
-
-/* examples/2c-r.css */
-div#container {
-float:left;
-margin:0 -250px 0 0;
-width:100%;
-}
-
-div#content {
-margin:0 250px 0 0;
-}
-
-div.sidebar {
-float:right;
-overflow:hidden;
-width:230px;
-}
-
-div#secondary {
-clear:right;
-}
-
-div#footer {
-clear:both;
-width:100%;
-}
- /* end examples/2c-r.css */

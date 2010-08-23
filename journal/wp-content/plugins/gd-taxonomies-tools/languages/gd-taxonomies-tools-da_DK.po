@@ -1,0 +1,487 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GD Taxonomies 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Team Blogos <wordpress@blogos.dk>\n"
+"Language-Team: Team Blogos <wordpress@blogos.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2;plural=n != 1;\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_c;_e;__ngettext:1,2;__ngettext_noop:1,2;_n:1,2;_nc:1,2;_n_noop:1,2\n"
+"X-Poedit-Basepath: d:\\wordpress\\plugins\\gd-taxonomies-tools\n"
+"X-Poedit-SearchPath-0: d:\\wordpress\\plugins\\gd-taxonomies-tools\n"
+
+#: code/js.php:2
+msgid "Are you sure? Operation is not reversible."
+msgstr "Er du sikker? Handlingen kan ikke gøres om."
+
+#: code/js.php:11
+#: forms/admin/taxonomy.form.php:3
+#: forms/render/tax.header.php:5
+msgid "Name"
+msgstr "Navn"
+
+#: code/js.php:12
+#: forms/admin/taxonomy.form.php:14
+#: forms/render/tax.header.php:4
+msgid "Label"
+msgstr "Etiket"
+
+#: code/js.php:14
+msgid "Some fields must be filled. Check this: "
+msgstr "Nogle felter <i>skal</i> udfyldes. Tjek: "
+
+#: forms/admin/settings.php:3
+msgid "General"
+msgstr "Generelt"
+
+#: forms/admin/settings.php:4
+msgid "Sitemap"
+msgstr "sitemap"
+
+#: forms/admin/settings.php:15
+msgid "Save Settings"
+msgstr "Gem indstillinger"
+
+#: forms/admin/taxonomies.php:46
+msgid "Add New"
+msgstr "Tilføj ny"
+
+#: forms/admin/taxonomies.php:8
+msgid "Default Taxonomies:"
+msgstr "Standardtaksonomier:"
+
+#: forms/admin/taxonomies.php:17
+msgid "Custom Taxonomies:"
+msgstr "Brugerdefinerede taksonomier:"
+
+#: forms/admin/taxonomies.php:27
+msgid "Inactive Custom Taxonomies:"
+msgstr "Inaktive brugerdefinerede taksonomier:"
+
+#: forms/admin/taxonomies.php:38
+msgid "Deleting the taxonomy will also delete the relationship entries in the database. Backup your database before proceeding with any deletion operation."
+msgstr "Sletning af taksonomien vil også slette posterne med relationer i databasen. Tag en sikkerhedskopi, inden du fortsætter med at slette noget. "
+
+#: forms/admin/taxonomies.php:39
+msgid "After deleting taxonomy, terms relationships in the database will remain."
+msgstr "Efter sletning af en taksonomi forbliver relationerne mellem termer i databasen."
+
+#: forms/admin/taxonomies.php:40
+msgid "You can change that on the settings panel."
+msgstr "Du kan ændre dette i Opsætning."
+
+#: forms/admin/taxonomy.add.php:24
+#: forms/admin/taxonomy.edit.php:12
+msgid "Go Back"
+msgstr "Tilbage"
+
+#: forms/admin/taxonomy.add.php:16
+#: forms/admin/taxonomy.edit.php:4
+msgid "Name for the taxonomy is invalid. Fix before proceeding."
+msgstr "Taksonominavnet er ugyldigt. Ret det, inden du fortsætter."
+
+#: forms/admin/taxonomy.add.php:22
+msgid "New taxonomy added."
+msgstr "Ny taksonomi tilføjet."
+
+#: forms/admin/taxonomy.edit.php:10
+msgid "Taxonomy updated."
+msgstr "Taksonomi opdateret."
+
+#: forms/admin/taxonomy.form.php:7
+msgid "Allow renaming of the taxonomy name. This will cause renaming all database entries for this taxonomy."
+msgstr "Tillad omdøbning af taksonominavnet. Det vil medføre, at alle databaseposter for denne taksonomi bliver omdøbt."
+
+#: forms/admin/taxonomy.form.php:10
+msgid "This must be unique name, not used by any other taxonomy."
+msgstr "Dette skal være et unikt navn, som ikke bruger af nogen anden taksonomi."
+
+#: forms/admin/taxonomy.form.php:11
+msgid "Also, use only lower case letters and no special characters except for the underscore."
+msgstr "Brug endvidere kun små bogstaver og ingen specielle tegn udover understregningstegnet."
+
+#: forms/admin/taxonomy.form.php:18
+msgid "This is the display name for the taxonomy."
+msgstr "Dette er visningsnavnet for taksonomien."
+
+#: forms/admin/taxonomy.form.php:21
+#: gd-taxonomies-tools.php:159
+#: gd-taxonomies-tools.php:360
+#: gd-taxonomies-tools.php:394
+msgid "Settings"
+msgstr "Opsætning"
+
+#: forms/admin/taxonomy.form.php:26
+#: forms/render/tax.header.php:3
+msgid "Domain"
+msgstr "Domænenavn"
+
+#: forms/admin/taxonomy.form.php:30
+msgid "Posts"
+msgstr "Indlæg"
+
+#: forms/admin/taxonomy.form.php:31
+#: forms/modules/info.php:18
+msgid "Links"
+msgstr "Links"
+
+#: forms/admin/taxonomy.form.php:37
+#: forms/render/tax.header.php:8
+msgid "Hierarchical"
+msgstr "Hierarkisk"
+
+#: forms/admin/taxonomy.form.php:41
+#: forms/admin/taxonomy.form.php:54
+#: forms/admin/taxonomy.form.php:72
+msgid "No"
+msgstr "Nej"
+
+#: forms/admin/taxonomy.form.php:42
+msgid "Yes"
+msgstr "Ja"
+
+#: forms/admin/taxonomy.form.php:48
+#: forms/render/tax.header.php:6
+msgid "Rewrite"
+msgstr "Omskrivning"
+
+#: forms/admin/taxonomy.form.php:52
+#: forms/admin/taxonomy.form.php:70
+msgid "Yes, using name"
+msgstr "Ja, brug navn"
+
+#: forms/admin/taxonomy.form.php:53
+#: forms/admin/taxonomy.form.php:71
+msgid "Yes, custom value"
+msgstr "Ja, brug brugerdefineret værdi"
+
+#: forms/admin/taxonomy.form.php:58
+#: forms/admin/taxonomy.form.php:76
+msgid "Custom"
+msgstr "Brugerdefineret"
+
+#: forms/admin/taxonomy.form.php:66
+msgid "Query Variable"
+msgstr "Forespørgselsvariabel"
+
+#: forms/admin/taxonomy.form.php:84
+msgid "For rewrite and query custom variables use only lower case letters and no special characters except for the underscore."
+msgstr "Til egne variabler for omskrivning (rewrites) og forespørgsler (queries) må du kun bruge små bogstaver og understregningstegnet. Ingen andre tegn."
+
+#: forms/admin/taxonomy.form.php:85
+msgid "With WP 2.8.x and WP 2.9.x not all options work, and they are disabled. Once the WordPress starts supporting this option, they will be enabled."
+msgstr "Ikke alle indstillinger fungerer med WP 2.8.x og WP 2.9.x. Derfor er de deaktiveret. Når WordPress begynder at understøtte denne indstilling, vil de blive aktiveret."
+
+#: forms/admin/taxonomy.form.php:88
+msgid "Status"
+msgstr "Status"
+
+#: forms/admin/taxonomy.form.php:90
+msgid "Taxonomy is set to active."
+msgstr "Taksonomi er sat til aktiv."
+
+#: forms/admin/taxonomy.form.php:94
+msgid "Save Taxonomy"
+msgstr "Gem taksonomi"
+
+#: forms/modules/general.php:8
+msgid "Basic statistics"
+msgstr "Grundlæggende statistik"
+
+#: forms/modules/general.php:10
+msgid "Default Taxonomies"
+msgstr "Standardtaksonomier"
+
+#: forms/modules/general.php:15
+#: forms/modules/general.php:20
+#: forms/modules/general.php:25
+#: forms/modules/general.php:37
+msgid "for"
+msgstr "for"
+
+#: forms/modules/general.php:15
+#: forms/modules/general.php:20
+#: widgets/gdtt-terms-list.php:52
+msgid "posts"
+msgstr "indlæg"
+
+#: forms/modules/general.php:15
+#: forms/modules/general.php:37
+msgid "hierarchical"
+msgstr "hierarkisk"
+
+#: forms/modules/general.php:25
+msgid "links"
+msgstr "links"
+
+#: forms/modules/general.php:31
+msgid "Custom Taxonomies"
+msgstr "Brugerdefinerede taksonomier"
+
+#: forms/modules/info.php:3
+msgid "Info"
+msgstr "Info"
+
+#: forms/modules/info.php:7
+msgid "Version"
+msgstr "Version"
+
+#: forms/modules/info.php:8
+msgid "release date"
+msgstr "udgivelsesdato"
+
+#: forms/modules/info.php:12
+msgid "Change Log"
+msgstr "Log over ændringer"
+
+#: forms/modules/info.php:13
+msgid "detailed list of changes"
+msgstr "detaljeret liste over ændringer"
+
+#: forms/modules/info.php:14
+msgid "show"
+msgstr "vis"
+
+#: forms/modules/info.php:23
+msgid "official plugin page"
+msgstr "officiel pluginside"
+
+#: forms/modules/info.php:24
+#: forms/modules/info.php:29
+#: forms/modules/info.php:34
+#: forms/modules/info.php:44
+#: forms/modules/info.php:58
+#: forms/modules/info.php:63
+#: forms/modules/info.php:68
+#: forms/modules/info.php:73
+#: forms/modules/info.php:78
+msgid "visit"
+msgstr "besøg"
+
+#: forms/modules/info.php:28
+msgid "discussions group"
+msgstr "diskussionsgruppe"
+
+#: forms/modules/info.php:33
+msgid "wordpress plugin page"
+msgstr "WordPress-pluginside"
+
+#: forms/modules/info.php:38
+msgid "Editions"
+msgstr "Udgaver"
+
+#: forms/modules/info.php:42
+msgid "Lite / Pro"
+msgstr "Lite / Pro"
+
+#: forms/modules/info.php:43
+msgid "both editions of the plugin"
+msgstr "begge udgaver af dette plugin"
+
+#: forms/modules/info.php:56
+msgid "Official Website"
+msgstr "Officiel website"
+
+#: forms/modules/info.php:57
+msgid "golden dragon official web portal"
+msgstr "golden dragons officielle webportal"
+
+#: forms/modules/info.php:62
+msgid "tv shows reviews and news"
+msgstr "tv viser anmeldelser og nyheder"
+
+#: forms/modules/info.php:67
+msgid "a wordpress rating system"
+msgstr "Et bedømmelsessystem til WordPress"
+
+#: forms/modules/info.php:72
+msgid "wordpress development"
+msgstr "WordPress-udvikling"
+
+#: forms/modules/info.php:76
+msgid "Support Forum"
+msgstr "Supportforum"
+
+#: forms/modules/info.php:77
+msgid "development discussion forum"
+msgstr "Supportforum for udviklere"
+
+#: forms/render/tax.header.php:7
+msgid "Query"
+msgstr "Forespørgsel"
+
+#: forms/render/tax.header.php:9
+msgid "Terms"
+msgstr "Termer"
+
+#: forms/render/tax.header.php:10
+msgid "Options"
+msgstr "Indstillinger"
+
+#: forms/render/tax.item.php:28
+msgid "delete"
+msgstr "slet"
+
+#: forms/render/tax.item.php:29
+msgid "edit"
+msgstr "redigér"
+
+#: forms/render/tax.item.php:31
+msgid "terms"
+msgstr "termer"
+
+#: forms/render/tax.item.php:24
+msgid "yes"
+msgstr "ja"
+
+#: forms/render/tax.item.php:24
+msgid "no"
+msgstr "nej"
+
+#: forms/settings/general.php:1
+msgid "Delete"
+msgstr "Slet"
+
+#: forms/settings/general.php:3
+msgid "Delete terms from database once the taxonomy is deleted."
+msgstr "Slet termer fra databaser, når en taksonomi er slettet."
+
+#: forms/settings/general.php:5
+msgid "If this options is not checked, after deleting taxonomy all it's terms will remain in the database."
+msgstr "Hvis denne indstilling ikke er afkrydset, bliver alle en taksonomis termer i databasen, når den er slettet."
+
+#: forms/settings/sitemap.php:1
+msgid "Rebuild"
+msgstr "Genetableret"
+
+#: forms/settings/sitemap.php:3
+msgid "Add custom taxonomies terms URL's to sitemap file."
+msgstr "Tilføj URL&#39;er for egne taksonomitermer til sitemap-filen."
+
+#: forms/settings/sitemap.php:5
+msgid "This option requires XML Sitemap Generator plugin. Once the sitemap is generated, new terms URL's will be added to it."
+msgstr "Denne indstilling kræver XML Sitemap Generator-pluginnet. Når sitemappen genereres, vil URL&#39;er til nye termer blive tilføjet."
+
+#: forms/shared/front.header.php:8
+msgid "plugin for custom taxonomies managment"
+msgstr "plugin til håndtering af egne taksonomier"
+
+#: widgets/gdtt-terms-cloud/basic.php:2
+#: widgets/gdtt-terms-list/basic.php:2
+msgid "Title"
+msgstr "Titel"
+
+#: widgets/gdtt-terms-cloud/basic.php:8
+#: widgets/gdtt-terms-list/basic.php:8
+msgid "Maximum terms to show"
+msgstr "Max termer, der skal vises"
+
+#: widgets/gdtt-terms-cloud/display.php:2
+#: widgets/gdtt-terms-list/display.php:8
+msgid "Additional CSS class"
+msgstr "Ekstra CSS-klasse"
+
+#: widgets/gdtt-terms-cloud/display.php:8
+msgid "Font size unit"
+msgstr "Enhed for skriftstørrelse"
+
+#: widgets/gdtt-terms-cloud/display.php:12
+msgid "Smallest term size"
+msgstr "Mindste termstørrelse"
+
+#: widgets/gdtt-terms-cloud/display.php:16
+msgid "Largest term size"
+msgstr "Største termstørrelse"
+
+#: widgets/gdtt-terms-cloud/filter.php:2
+#: widgets/gdtt-terms-list/filter.php:2
+msgid "Taxonomy"
+msgstr "Taxonomy"
+
+#: widgets/gdtt-terms-cloud/filter.php:10
+#: widgets/gdtt-terms-list/filter.php:10
+msgid "Sort by"
+msgstr "Sortér efter"
+
+#: widgets/gdtt-terms-cloud/filter.php:13
+#: widgets/gdtt-terms-list/filter.php:13
+msgid "Term name"
+msgstr "Navn på term"
+
+#: widgets/gdtt-terms-cloud/filter.php:14
+#: widgets/gdtt-terms-list/filter.php:14
+msgid "Posts count"
+msgstr "Indlægstæller"
+
+#: widgets/gdtt-terms-cloud/filter.php:19
+#: widgets/gdtt-terms-list/filter.php:19
+msgid "Order"
+msgstr "Rækkefølge"
+
+#: widgets/gdtt-terms-cloud/filter.php:22
+#: widgets/gdtt-terms-list/filter.php:22
+msgid "Ascending"
+msgstr "Stigende"
+
+#: widgets/gdtt-terms-cloud/filter.php:23
+#: widgets/gdtt-terms-list/filter.php:23
+msgid "Descending"
+msgstr "Faldende"
+
+#: widgets/gdtt-terms-list/display.php:2
+msgid "Show number of posts"
+msgstr "Vis antal indlæg"
+
+#: widgets/gdtt-terms-cloud.php:18
+msgid "Display cloud with taxonomy terms."
+msgstr "Vis sky med taksonomitermer."
+
+#: widgets/gdtt-terms-list.php:16
+msgid "Display list with taxonomy terms."
+msgstr "Vis liste med taksonomitermer."
+
+#: widgets/gdtt-terms-list.php:52
+msgid "post"
+msgstr "indlæg"
+
+#: gd-taxonomies-tools.php:160
+msgid "Donate"
+msgstr "Donér"
+
+#: gd-taxonomies-tools.php:170
+#: gd-taxonomies-tools.php:359
+#: gd-taxonomies-tools.php:420
+msgid "Taxonomies"
+msgstr "Taksonomier"
+
+#: gd-taxonomies-tools.php:358
+msgid "Front Page"
+msgstr "Forside"
+
+#: gd-taxonomies-tools.php:405
+msgid "Tools"
+msgstr "Værktøj"
+
+#: gd-taxonomies-tools.php:424
+msgid "Add new Taxonomy"
+msgstr "Tilføj ny taksonomi"
+
+#: gd-taxonomies-tools.php:428
+msgid "Edit Taxonomy"
+msgstr "Redigér taksonomi"
+
+#~ msgid "With WP 2.8.x not all options work, and they are disabled."
+#~ msgstr ""
+#~ "Ikke alle indstillinger fungerer med WP 2.8.x og er derfor deaktiveret."
+#~ msgid "help further development"
+#~ msgstr "støt videreudvikling"
+#~ msgid "extended premium version"
+#~ msgstr "udvidet betalingsudgave"
+
