@@ -1,9 +1,8 @@
-% sandeshs_professional_resume.tex
-% (c) 2008 Sandesh Singh <sandesh247@gmail.com> http://sandesh247.googlepages.com/
+% (c) 2008 Sandesh Singh <sandesh247@gmail.com> http://sandesh247.com/
 %
 % Inspiration: resume by Matthew M. Boedicker <mboedick@mboedick.org> http://mboedick.org
 %
-\documentclass[a4paper,10pt,final]{article}
+\documentclass[a4paper,11pt,final]{article}
 
 \usepackage{mdwlist}
 \usepackage{url}
@@ -12,6 +11,7 @@
 \usepackage[T1]{fontenc}
 
 \usepackage{lmodern}
+\usepackage{marvosym}
 %\usepackage[bitstream-charter]{mathdesign}
 %\usepackage{gfsartemisia}
 %\usepackage[urw-garamond]{mathdesign}
@@ -29,281 +29,158 @@
 \usepackage{savetrees}
 
 % meh ... me not a big fan of reduced linespread.
-\linespread{1}
+%\linespread{1}
 
 % hyperlinks
 \usepackage[pdftex,bookmarks=true,]{hyperref}
 \hypersetup{
-    pdftitle={Sandesh Singh's Professional Resume},    % title
-    pdfauthor={Sandesh Singh},     % author
-    pdfsubject={Resume},   % subject of the document
-    pdfkeywords={keywords}, % list of keywords
-    pdfnewwindow=true,      % links in new window
-    colorlinks=false,       % false: boxed links; true: colored links
-    linkcolor=red,          % color of internal links
-    citecolor=green,        % color of links to bibliography
-    filecolor=magenta,      % color of file links
-    urlcolor=blue,          % color of external links
+  pdftitle={Resume},    % title
+  pdfauthor={Sandesh Singh},     % author
+  pdfsubject={Resume},   % subject of the document
+  pdfkeywords={keywords}, % list of keywords
+  pdfnewwindow=true,      % links in new window
+  colorlinks=false,       % false: boxed links; true: colored links
+  linkcolor=red,          % color of internal links
+  citecolor=green,        % color of links to bibliography
+  filecolor=magenta,      % color of file links
+  urlcolor=blue,          % color of external links
 }
 \urlstyle{same}
 
 % \usepackage[open, openlevel=2]{bookmark}
 
+% lighter bullets
+\renewcommand{\labelitemi}{$\cdot$}
+
 \raggedbottom
 
 % custom commands 
 \newcommand{\resumetitle}[1]{%
-	\subsection*{%
-		\hspace{-5pt}\large#1%
-	}%
-	
-	\medskip%
+  \subsection*{%
+    \large\sc{#1}%
+    \normalsize
+  }%
+  
+  %\medskip%
 }%
+
+\newcommand{\jobexp}[5]{%
+\textbf{#1}\hfill\hspace{3pt}\small\small{\Keyboard}\hspace{3pt}\normalsize\url{#2}\\{#4}\hfill\small\small{#3}\normalsize\\{#5}\vspace{3pt}%
+}
 
 \newcommand{\resumedescheader}[1]{%
-	\resumetitle{#1}
-}%
-
-\newcommand{\resumesection}[1]{%
-	\section*{%
-		\begin{center}%
-		\Large{#1}%
-		\end{center}%
-	}%
+  \smallskip%
+  \resumetitle{#1}
 }%
 
 %custom environments
 \newenvironment{resumedescription}{%
-	\begin{basedescript}{\desclabelstyle{\nextlinelabel}\desclabelwidth{0.15\linewidth}}{%
-		\renewcommand{\makelabel}[1]{\textsl{##1}}%
-	}%
-	}{%
-	\end{basedescript}%
-}
-
-\newenvironment{resumesubdescription}{%
-	\begin{basedescript}{\desclabelstyle{\multilinelabel}\desclabelwidth{0.2\linewidth}}{%
-		\renewcommand{\makelabel}[1]{{##1}}%
-	}%
-	}{%
-	\end{basedescript}%
+  \begin{basedescript}{\desclabelstyle{\multilinelabel}\desclabelwidth{0.15\linewidth}}{%
+      \renewcommand{\makelabel}[1]{{##1}}%
+    }%
+      \setlength{\itemsep}{0pt}
+}{%
+  \end{basedescript}%
 }
 
 \begin{document}
 
-\thispagestyle{empty}
+\pagestyle{empty}
+
 \begin{center}
-    \hspace{-10pt} \huge\textbf{Sandesh Singh} \hfill \normalsize \today \\
-    \medskip D--1, Rameshwar Apartments, Papdy \hfill (+91) 966 505 1349 \\
-    Vasai, Thane \hfill \href{mailto:sandesh247@gmail.com}{sandesh247@gmail.com} \\
-    Maharashtra, India -- 401 207 \hfill  \url{http://sandesh247.com}          \\
+  \centering\Large\textbf{Sandesh Singh}\normalsize \\
+  \centering{
+    %\Mobilefone\hspace{1pt} (pending) 
+    \hspace{5pt}\Letter\hspace{1pt}\href{mailto:sandesh247@gmail.com}
+    {sandesh247@gmail.com}\hspace{5pt}\Keyboard\hspace{3pt}\url{http://sandesh247.com}
+  } \\
   \rule[2pt]{0.99\linewidth}{.1pt}
 \end{center}
+
 \vspace{-10pt}
-\resumedescheader{Work}
-	\begin{resumedescription}
-		\item[Senior Software Engineer, Finacus \hfill \emph {(Nov 2007 -- Aug 2008)}]
-		\begin{itemize*}
-			\item part of the company since inception
-			\item helped set up policies related to source control, best practices, and general collaboration
-			\item made a framework for rapid application development in ASP.Net, which primarily consisted of GUI controls, an OR mapping framework based on gentle.net and code generation tools
-			\item played a role in the development of a loan origination system using the above framework
-			\item led the conceptualization and design of a second product using the same framework
-		\end{itemize*}
-	\end{resumedescription}
+\resumedescheader{Education}
+\textbf{Bachelor of Engineering (Computers)} \hfill \textrm{Jul 2002 -- Jun 2006} \\
+First Class, Vidyavardhini College of Engineering and Technology
 
-	\begin{resumedescription}
-		\item[Subject Matter Expert, Amdocs \hfill \emph {(Aug 2006 -- Oct 2007)}]
-		\begin{itemize*}
-			\item worked on development of Amdocs `Rater' module for two successive versions
-			\item traveled to Israel for end--to--end testing of the Amdocs' billing product
-			\item traveled to Russia for production support of the Rater module
-			\item provided training of Rater modules to people from different applications
-		\end{itemize*}
-	\end{resumedescription}
+\resumedescheader{Academic Experience}
+\begin{itemize*}
+\item developed the parser, query execution engine and GUI for \textbf{T}he \textbf{D}istributed \textbf{D}ata\textbf{B}ase (TDDB), a true distributed database built from the ground up, which conforms to the SQL-92 syntax
+\item developed a highly-available, concurrent mail server in Java, extensible through web-services
+\item conducted workshops \& seminars on various topics, including databases, programming and graphics
+\item developed a book exchange site, where students could request for and put up books for lending
+\item was the college web-master, maintained the website and on-line registrations for various events
+\end{itemize*}
 
-	\begin{resumedescription}
-		\item[Engineering \hfill \emph {(2002 -- 2006)}]
-		\begin{itemize*}
-			\item developed the SQL parser and GUI for TDDB (the distributed database) with two teammates
-			\item developed a corporate mailing solution in Java (server + GUI client)
-			\item made a flash based quiz game, used in our annual CSI festival and CSI National convention.
-			\item developed various programs, such as a 3D game in OpenGL, a sudoku solver, websites
-		\end{itemize*}
-	\end{resumedescription}
+\resumedescheader{Career}
+\jobexp
+	{Neorithm Technologies}
+	{http://www.neorithm.com}
+	{Oct 2008 - Present}
+	{Tech Lead}
+	{Core team member since inception, led the technology R\&D across the company's product lines}
+\\ \jobexp
+	{Finacus Solutions}
+	{http://www.finacus.com}
+	{Nov 2007 - Aug 2008}
+	{Senior Software Engineer}
+	{Core team member, enabled rapid application development with an in-house framework}
+\\ \jobexp
+	{Amdocs Development Centre (India)}
+	{http://www.amdocs.com}
+	{Aug 2006 - Oct 2007}
+	{Subject Matter Expert}
+	{Implemented Amdocs' telecom billing functionality using Unix processes}
 
+\resumedescheader{Professional Experience}
+\begin{resumedescription}
+\item[neorithm]
+\begin{itemize*}
+\item developed a rule engine to filter `interesting' transactions in a bank, which led to an \textbf{anti money laundering} product
+\item developed a \textbf{business intelligence} product, where a financial institutions' relational data is imported into a SSAS cube, and analyzed in a pivot table built in Flex
+\item developed a C\# API to emulate a \textbf{versioned filesystem}, with pluggable storage support; in particular, a file--system and a relational database back--ends are ready
+\item oversaw the development of a \textbf{loan origination system}, where potential customers were identified and clustered based on various financial, demographic and personal parameters
+\item undertook \textbf{consulting assignments} on behalf of neorithm for performance optimization
+\end{itemize*}
+\item[Finacus]
+\begin{itemize*}
+\item developed an \textbf{enterprise application development framework}, consisting of workflows, an ORM framework, message queues; and code generators for an ASP.Net based UI
+\item assisted in the development of an \textbf{ATM switch}, which could be theoretically support any ATM protocol; in particular, the Diebold and NCR protocols were developed
+\item played a major role in improving the \textbf{usability} of web applications, using JavaScript to bring desktop--like features to web applications
+\end{itemize*}
+\item[Amdocs]
+\begin{itemize*}
+\item worked on extending the functionality of Amdocs' `\textbf{Rater}' product for two successive versions, writing \textbf{shell scripts and C++ daemons}
+\item travelled to Israel for testing, and to Russia for production support of `Rater' deployment
+\end{itemize*}
+\end{resumedescription}
+
+\vspace{-11pt}
 \resumedescheader{Skills}
-	\begin{resumedescription}
-		\item [Programming]
-				\begin{itemize*}
-				\item worked in C\#, C, C++, Java and shell scripting over the years
-				\item worked with Visual Studio and Eclipse, and vi/emacs over ssh
-				\item experimented with Python, Ruby
-				\end{itemize*}
-
-		\item [Web Design] 
-				\begin{itemize*}
-				\item worked extensively with JavaScript, used `jQuery' to add desktop--like features to websites
-				\item have working knowledge of HTML, CSS, \LaTeX
-				\end{itemize*}
-
-		\item [Database] 
-				\begin{itemize*}
-				\item worked with SQL Server 2005 and Oracle
-				\item familiar with SQL and OR Mapping techniques with frameworks like Gentle.Net and NHibernate
-				\end{itemize*}
-
-	\end{resumedescription}
-
-\resumedescheader{Study}
-	\begin{resumedescription}
-		\item [BE]
-			\begin{itemize*}
-			\item 60 \%, Mumbai University (Computers) \\
-			Vidyavardhini College of Engineering and Technology
-			\end{itemize*}
-		\item [HSC (10+2)]
-			\begin{itemize*}
-			\item 91 \%, Mumbai University \\
-			Thomas Baptista Junior College
-			\end{itemize*}
-		\item [SSC (10)]
-			\begin{itemize*}
-			\item 86 \%, Mumbai University \\ 
-			St. Augustine's High School
-			\end{itemize*}
-	\end{resumedescription}
-
-\resumedescheader{Play}
-	\begin{resumedescription}
-		\item[]
-			\begin{itemize*}
-			\item was an active member of the CSI, acted as event head for various competitions, and won many prizes as a participant in others
-			\item listen to music 
-			\item read books, mostly those recommended by friends
-			\item enthusiastic cricketer, though never selected in team
-			\end{itemize*}
-	\end{resumedescription}
-
-\pagebreak
-\pagestyle{headings}
-\resumesection{Responsibilities}
-\resumetitle{@ Finacus \hfill \small{\url{http://www.finacus.co.in/}}}
-	\begin{resumedescription}
-		\item[Evolution]
-			Evolution was the framework on which the all the products of the organization were built. This framework consisted of a controls library, an OR mapping framework, code generation templates, file conversion utilities etc.
-
-			\begin{resumesubdescription}
-				\item[OR Framework]
-				\begin{itemize*}
-					\item single entry point to all database operations, based on the front controller approach
-					\item supported auditing facilities, all changes to the database were logged
-					\item used optimistic concurrency control, users would be alerted if they were working on a stale version
-					\item allowed developers to manipulate a database row with minimal knowledge (deserves explanation)
-				\end{itemize*}
-			\end{resumesubdescription}
-
-			\begin{resumesubdescription}
-				\item[Controls]
-				\begin{itemize*}
-					\item controls to perform basic input, lookup--based selection and picklists
-					\item optional rendering of controls based on user authorization
-					\item runtime control over number/types of controls being rendered based on configuration
-					\item controls for multiline (excel--like) editing of values
-				\end{itemize*}
-			\end{resumesubdescription}
-			
-			\begin{resumesubdescription}
-				\item[File conversion API]
-				\begin{itemize*}
-					\item supported Excel, delimited text (csv), and databases
-					\item XML based configuration, source and destination columns were configurable at runtime
-					\item supported custom transformations mid--flow
-				\end{itemize*}
-			\end{resumesubdescription}
-			
-		\item[AML]
-			AML (Anti money laundering) was the second product which was being made on the Evolution framework. I led the product development until I left the organization. During this period, some of my responsibilties were --
-			\begin{itemize*}
-				\item requirements gathering from the customers
-				\item designing the data model
-				\item design a framework for workflows to support escalation of tasks within an organization
-			\end{itemize*}
-
-		\item[Administrative Responsibilities]
-			\begin{itemize*}
-				\item set up source control policies, with some customization of SVN
-				\item took interviews for new candidates in the organization
-				\item evaluated 3rd party frameworks for use in the organization
-			\end{itemize*}
-	\end{resumedescription}
-
-\resumetitle{@ Amdocs \hfill \small{\url{http://www.amdocs.com/}}}
-	\begin{resumedescription}
-		\item[Vimpelcom, V17]
-			Vimpelcom is a Russian telecommunications service provider, also known as Beeline. Version 17 was a substantial version for the customer as their legacy processes were being integrated with the new Amdocs product, Enabler. I worked on the Rater module in Enabler, whose responsibility was primarily to `rate' events (voice, sms, data). My responsibilities in this version were :
-			\begin{itemize*}
-				\item design solutions based on the business requirements
-				\item develop unix processes in C++ / ksh to implement the functionality
-				\item design and execute unit and sub--system tests
-				\item provides production and system testing support
-			\end{itemize*}
-
-		\item[Vimpelcom, V18]
-			My roles were further expanded in version 18, where in addition to the above, I also completed the following responsibilities :
-			\begin{itemize*}
-				\item perform impact assesment analysis of new requirements
-				\item configuration and development of a data migration utility
-				\item execute system tests
-				\item provide production support
-				\item impart training about the `Rater' module to fellow colleagues
-			\end{itemize*}
-	\end{resumedescription}
-
-\resumetitle{@ Engineering}
 \begin{resumedescription}
-		\item[TDDB]
-			TDDB was a final year project undertaken by three groups belonging to three different colleges. TDDB is an acronym for \textbf{T}he \textbf{D}istributed \textbf{D}ata\textbf{B}ase. It was a functional RDBMS, with support for many SQL statements, like SELECT, INSERT, CREATE TABLE etc. The responsibilities of the three colleges were to develop the storage engine, the parser, and the distribution mechanism. Our group developed the parser and the gui interface for the engine. More information can be had at \url{http://tddb.sourceforge.net/}.
+\item [Languages]
+\begin{itemize*}
+  \item proficient in C\#, C, C++, shell scripting
+  \item working experience with Python, Ruby, Java
+\end{itemize*}
 
-My responsibilities in this project were :
-			\begin{itemize*}
-				\item design the parser in flex/bison 
-				\item design C++ data structures to interact with the storage engine
-				\item optimization of queries
-				\item development of a front--end in QT
-			\end{itemize*}
+\item [Frameworks]
+\begin{itemize*}
+  \item OR Mapping frameworks (NHibernate, Microsoft Entity Framework, Gentle.Net)
+  \item Web frameworks (Google AppEngine (Python), ASP.Net, Google AJAX API, jQuery)
+\end{itemize*}
 
-\item[OXEON]
-			OXEON was intended to be a corporate mailing solution. It consisted of a mail server and GUI client. It used cryptographic libraries from the `Bouncy Castle' project to provide security.
-
-\item[Book Xchange]
-			This was a website developed as a part of the curriuculum, which intended to facilitate exchange of books among students. Students could put up books for exchange/sell with an asking price, and could also request books. However, no mechanism of payment was provided.
+\item [Data] 
+\begin{itemize*}
+  \item used MDX/DMX queries for data mining on Microsoft Analysis Services
+  \item working experience with Microsoft Reporting Services
+\end{itemize*}
 
 \end{resumedescription}
 
-\resumesection{Awards and achievements}
-\begin{itemize*}
-\item Received accolades and special bonuses while working in Amdocs DVCI
-\item Won 1st place in programming contest in the CSI fest at my college (2006)
-\item Won 1st place in a `Mock Recruitment' competition in CSI annual fest at our college, and 2nd place in `Mock Interview' in the annual cultural festival (2005)
-\item Won 1st place in programming contest at Vivekanand Institute of Technology (2005)
-\item Gave a seminar on OpenGL (3D graphics API) at Touchstone '04
-\item Won 2nd place in a web--designing contest in CSI National Convention (2003)
-\end{itemize*}
-
-\resumesection{Extra curricular activities}
-\begin{itemize*}
-\item Acted as event head for various events held in college
-\item Technical adviser for college CSI branch, and editor of the college monthly
-\end{itemize*}
-
-\resumesection{Personal Information}
-\begin{resumedescription}
-	\item[Full name] Sandesh Sankathaprasad Singh 
-	\item[Date of birth] July 22nd, 1984
-	\item[Gender] Male
-	\item[Languages] Hindi, English
-	\item[Marital Status] Single
-\end{resumedescription}
+\resumedescheader{Extracurricular Activities}
+-- won many programming contests around the Mumbai University campus during engineering studies \\
+-- received accolades and special bonuses while working in Amdocs DVCI \\
+-- listen to ColdPlay, Beatles, Dido; read P.G. Wodehouse, John Grisham; play cricket
 
 \end{document}
+
