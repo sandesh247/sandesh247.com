@@ -65,7 +65,14 @@
 }%
 
 \newcommand{\jobexp}[5]{%
-\textbf{#1}\hfill\hspace{3pt}\small\small{\Keyboard}\hspace{3pt}\normalsize\url{#2}\\{#4}\hfill\small\small{#3}\normalsize\\{#5}\vspace{3pt}%
+	\textbf{{#4}}
+	\hfill
+	\textbf{\href{#2}{#1}}, {#3}
+	\\\vspace{-12pt}%
+}
+
+\newcommand{\eduexp}[3]{%
+\textbf{#1}\hfill{#2}\normalsize\\{#3}\vspace{3pt}%
 }
 
 \newcommand{\resumedescheader}[1]{%
@@ -99,68 +106,21 @@
 
 \vspace{-10pt}
 \resumedescheader{Education}
-\textbf{Bachelor of Engineering (Computers)} \hfill \textrm{Jul 2002 -- Jun 2006} \\
-First Class, Vidyavardhini College of Engineering and Technology
+\eduexp
+	{Bachelor of Engineering (Computers)}
+	{Jul 2002 - Jun 2006}
+	{First Class, Vidyavardhini College of Engineering and Technology}
+\\ \eduexp
+	{Master's in Computer Science}
+	{Aug 2010}
+	{Stony Brook University}
 
-\resumedescheader{Academic Experience}
-\begin{itemize*}
-\item developed the parser, query execution engine and GUI for \textbf{T}he \textbf{D}istributed \textbf{D}ata\textbf{B}ase (TDDB), a true distributed database built from the ground up, which conforms to the SQL-92 syntax
-\item developed a highly-available, concurrent mail server in Java, extensible through web-services
-\item conducted workshops \& seminars on various topics, including databases, programming and graphics
-\item developed a book exchange site, where students could request for and put up books for lending
-\item was the college web-master, maintained the website and on-line registrations for various events
-\end{itemize*}
-
-\resumedescheader{Career}
-\jobexp
-	{Neorithm Technologies}
-	{http://www.neorithm.com}
-	{Oct 2008 - Present}
-	{Tech Lead}
-	{Core team member since inception, led the technology R\&D across the company's product lines}
-\\ \jobexp
-	{Finacus Solutions}
-	{http://www.finacus.com}
-	{Nov 2007 - Aug 2008}
-	{Senior Software Engineer}
-	{Core team member, enabled rapid application development with an in-house framework}
-\\ \jobexp
-	{Amdocs Development Centre (India)}
-	{http://www.amdocs.com}
-	{Aug 2006 - Oct 2007}
-	{Subject Matter Expert}
-	{Implemented Amdocs' telecom billing functionality using Unix processes}
-
-\resumedescheader{Professional Experience}
-\begin{resumedescription}
-\item[neorithm]
-\begin{itemize*}
-\item developed a rule engine to filter `interesting' transactions in a bank, which led to an \textbf{anti money laundering} product
-\item developed a \textbf{business intelligence} product, where a financial institutions' relational data is imported into a SSAS cube, and analyzed in a pivot table built in Flex
-\item developed a C\# API to emulate a \textbf{versioned filesystem}, with pluggable storage support; in particular, a file--system and a relational database back--ends are ready
-\item oversaw the development of a \textbf{loan origination system}, where potential customers were identified and clustered based on various financial, demographic and personal parameters
-\item undertook \textbf{consulting assignments} on behalf of neorithm for performance optimization
-\end{itemize*}
-\item[Finacus]
-\begin{itemize*}
-\item developed an \textbf{enterprise application development framework}, consisting of workflows, an ORM framework, message queues; and code generators for an ASP.Net based UI
-\item assisted in the development of an \textbf{ATM switch}, which could be theoretically support any ATM protocol; in particular, the Diebold and NCR protocols were developed
-\item played a major role in improving the \textbf{usability} of web applications, using JavaScript to bring desktop--like features to web applications
-\end{itemize*}
-\item[Amdocs]
-\begin{itemize*}
-\item worked on extending the functionality of Amdocs' `\textbf{Rater}' product for two successive versions, writing \textbf{shell scripts and C++ daemons}
-\item travelled to Israel for testing, and to Russia for production support of `Rater' deployment
-\end{itemize*}
-\end{resumedescription}
-
-\vspace{-11pt}
 \resumedescheader{Skills}
 \begin{resumedescription}
 \item [Languages]
 \begin{itemize*}
-  \item proficient in C\#, C, C++, shell scripting
-  \item working experience with Python, Ruby, Java
+  \item proficient in C\#, Javascript, C, C++
+  \item working experience with Python, shell scripting, Ruby, Java
 \end{itemize*}
 
 \item [Frameworks]
@@ -171,11 +131,61 @@ First Class, Vidyavardhini College of Engineering and Technology
 
 \item [Data] 
 \begin{itemize*}
-  \item used MDX/DMX queries for data mining on Microsoft Analysis Services
+  \item used and optimized MDX/DMX queries for data mining on Microsoft Analysis Services
+  \item worked with Microsoft Sql Server for application and ORM development
   \item working experience with Microsoft Reporting Services
 \end{itemize*}
 
 \end{resumedescription}
+
+\vspace{-12pt}
+\resumedescheader{Career}
+\jobexp
+	{Neorithm Technologies}
+	{http://www.neorithm.com}
+	{Oct 2008 - July 2010}
+	{Technical Leader}
+	{Core team member since inception, led the technology R\&D across the company's product lines}
+\begin{itemize*}
+\item one of the \textbf{founders of this startup}, I led the technology R\&D across the company's product lines
+\item developed a rule engine to filter `interesting' transactions in a bank, which led to an \textbf{anti money laundering} product currently deployed in a bank
+\item developed a \textbf{business intelligence} product, where a financial institutions' relational data is imported into a SSAS cube, and analyzed in a pivot table built in Flex
+\item developed a C\# API to emulate a \textbf{versioned filesystem}, with pluggable storage support; in particular, a file--system and a relational database back--ends are ready
+\item oversaw the development of a \textbf{loan origination system}, where potential customers were identified and clustered based on various financial, demographic and personal parameters
+\item undertook \textbf{consulting assignments} on behalf of neorithm for performance optimization
+\end{itemize*}
+\vspace{5pt}
+\jobexp
+	{Finacus Solutions}
+	{http://www.finacus.com}
+	{Nov 2007 - Aug 2008}
+	{Senior Software Engineer}
+	{Core team member, enabled rapid application development with an in-house framework}
+\begin{itemize*}
+\item developed an \textbf{enterprise application development framework}, consisting of workflows, an ORM framework, message queues; and code generators for an ASP.Net based UI
+\item assisted in the development of an \textbf{ATM switch}, which could be theoretically support any ATM protocol; in particular, the Diebold and NCR protocols were developed
+\item played a major role in improving the \textbf{usability} of web applications, using JavaScript to bring desktop--like features to web applications
+\end{itemize*}
+\vspace{5pt}
+\jobexp
+	{Amdocs Development Centre (India)}
+	{http://www.amdocs.com}
+	{Aug 2006 - Oct 2007}
+	{Subject Matter Expert}
+	{Implemented Amdocs' telecom billing functionality using Unix processes}
+\begin{itemize*}
+\item worked on extending the functionality of Amdocs' `\textbf{Rater}' product for two successive versions, writing \textbf{shell scripts and C++ daemons} on Unix (Sun and AIX) systems
+\item travelled to Israel for testing, and to Russia for production support of `Rater' deployment
+\end{itemize*}
+
+\resumedescheader{Academic Experience}
+\begin{itemize*}
+\item developed the parser, query execution engine and GUI for \textbf{T}he \textbf{D}istributed \textbf{D}ata\textbf{B}ase (TDDB), a true distributed database built from the ground up, which conforms to the SQL-92 syntax
+\item developed a highly-available, concurrent mail server in Java, extensible through web-services
+\item conducted workshops \& seminars on various topics, including databases, programming and graphics
+\item developed a book exchange site, where students could request for and put up books for lending
+\item was the college web-master, maintained the website and on-line registrations for various events
+\end{itemize*}
 
 \resumedescheader{Extracurricular Activities}
 -- won many programming contests around the Mumbai University campus during engineering studies \\
