@@ -10,7 +10,7 @@
 % font
 \usepackage[T1]{fontenc}
 
-\usepackage{lmodern}
+% \usepackage{lmodern}
 \usepackage{marvosym}
 %\usepackage[bitstream-charter]{mathdesign}
 %\usepackage{gfsartemisia}
@@ -23,7 +23,7 @@
 %\fontspec[BoldFont={Gentium},BoldFeatures={Weight=4}]{Gentium}
 %\setmainfont{Gentium Basic}
 
-\usepackage{oldstyle}
+% \usepackage{oldstyle}
 
 % save trees ;)
 \usepackage{savetrees}
@@ -97,13 +97,16 @@
 \begin{center}
   \centering\Large\textbf{Sandesh Singh}\normalsize \\
   \centering{
-    \makebox[0.3\linewidth][c]{\Mobilefone\quad+1 347-687-7748}
     \makebox[0.3\linewidth][c]{
-      \Letter\quad
+      \Mobilefone\hspace{1pt}
+      +1 347-687-7748}
+    \makebox[0.3\linewidth][c]{
+      \Letter\hspace{1pt}
       \href{mailto:sandesh247@gmail.com}{me@sandesh247.com}
     }
     \makebox[0.3\linewidth][c]{
-      \Keyboard\quad\url{http://sandesh247.com}
+      \Keyboard\hspace{1pt}
+      \url{http://sandesh247.com}
     }
   } \\
   \rule[2pt]{0.99\linewidth}{.1pt}
@@ -113,51 +116,61 @@
 \resumedescheader{Education}
 \eduexp
 	{Master's in Computer Science}
-	{Graduating 2012}
-	{Stony Brook University}
-\begin{itemize}
-  \item \textbf{Courses} Algorithms (A), Natural Language Processing (A), Computational Biology (A)
-  \item Worked on a classifier to detect vandal edits on wikipedia (84\% precision, 89\% recall)
-  \item Developed a system to recognize the language of a speaker from audio (9 languages, 72\% precision, 73\% recall)
-  \item Implemented and tested new text classification algorithms in the Applied Logic Lab.
-\end{itemize}
+	{Expected 2012}
+	{GPA 4.0, Stony Brook University}
+% \begin{itemize*}
+% \item \textbf{Courses} Algorithms (A), Natural Language Processing (A), Computational Biology (A)
+% \end{itemize*}
+\\
 \eduexp
 	{Bachelor of Engineering (Computers)}
-	{Jul 2002 - Jun 2006}
+	{Jun 2006}
 	{First Class, Vidyavardhini College of Engineering and Technology}
-\begin{itemize*}
-\item developed the parser, query execution engine and GUI for
-  \href{http://tddb.sf.net} {\textbf{T}he \textbf{D}istributed
-    \textbf{D}ata\textbf{B}ase (TDDB)}, a true distributed database
-  built from the ground up, which conforms to the SQL-92 syntax
-\item developed a highly-available, concurrent mail server in Java, extensible through web-services
-\item conducted workshops \& seminars on various topics, including databases, programming and graphics
-%\item developed a book exchange site, where students could request for and put up books for lending
-%\item was the college web-master, maintained the website and on-line registrations for various events
-\end{itemize*}
+% \begin{itemize*}
+% \item \textbf{Courses} Artificial Intelligence, Advanced Databases, Operating Systems, Computer Networks
+% \end{itemize*}
+
 \resumedescheader{Skills}
 \begin{resumedescription}
 \item [Languages]
 \begin{itemize*}
-  \item proficient in Python, Bash, Javascript, C\#
-  \item working experience with Ruby, Java, C, C++
+  \item proficient in C\#, Python, Java, Javascript, Bash
+  \item working experience with C++, Ruby
+\end{itemize*}
+
+\item [Data] 
+\begin{itemize*}
+  \item classification and mining with Weka, numpy, NLTK, learning R
+  \item data mining on Microsoft Analysis Services with MDX/DMX, SQL
 \end{itemize*}
 
 \item [Frameworks]
 \begin{itemize*}
   \item OR Mapping frameworks (NHibernate, Microsoft Entity Framework, Gentle.Net)
-  \item Web frameworks (Google AppEngine (Python), ASP.Net, Google AJAX API, jQuery)
-\end{itemize*}
-
-\item [Data] 
-\begin{itemize*}
-  \item classification and mining with Weka, numpy
-  \item data mining on Microsoft Analysis Services with MDX/DMX, SQL, ORM development
+  \item Web frameworks (Google AppEngine, ASP.Net, Django, Google AJAX API, jQuery)
 \end{itemize*}
 
 \end{resumedescription}
 
-\vspace{-12pt}
+\vspace{-7pt}
+\resumedescheader{Academic Projects}
+\begin{itemize*}
+  \item implemented and tested new \textbf{text classification algorithms} in the Applied Logic Lab.
+  \item worked on a \textbf{classifier to detect vandal edits} on wikipedia (84\% precision, 89\% recall)
+  \item developed a system to \textbf{recognize the language of a
+    speaker from audio} (9 languages, 72\% precision, 73\% recall);
+    currently working under Prof. Steven Skiena towards improving and
+    extending the system
+  \item developed the parser, query execution engine and GUI for
+    \href{http://tddb.sf.net} {\textbf{T}he \textbf{D}istributed
+    \textbf{D}ata\textbf{B}ase (TDDB)}, a true distributed database
+    built from the ground up, which conforms to the SQL-92 syntax
+  \item developed a highly-available, concurrent mail server in Java, extensible through web-services
+  \item conducted workshops \& seminars on various topics, including databases, programming and graphics
+    %\item developed a book exchange site, where students could request for and put up books for lending
+    %\item was the college web-master, maintained the website and on-line registrations for various events
+\end{itemize*}
+
 \resumedescheader{Career}
 \jobexp
 	{Neorithm Technologies}
@@ -167,11 +180,11 @@
 	{Core team member since inception, led the technology R\&D across the company's product lines}
 \begin{itemize*}
 \item one of the \textbf{founders of this startup}, I led the technology R\&D across the company's product lines
-\item developed a rule engine to filter `interesting' transactions in a bank, which led to an \textbf{anti money laundering} product currently deployed in a bank
+\item built a rule engine to filter `interesting' transactions in a bank, which led to an \textbf{anti money laundering} product currently deployed in a bank
 \item developed a \textbf{business intelligence} product, where a financial institutions' relational data is imported into a SSAS cube, and analyzed in a pivot table built in Flex
 \item developed a C\# API to emulate a \textbf{versioned filesystem}, with pluggable storage support; in particular, a file--system and a relational database back--ends are ready
 \item oversaw the development of a \textbf{loan origination system}, where potential customers were identified and clustered based on various financial, demographic and personal parameters
-\item undertook \textbf{consulting assignments} on behalf of neorithm for performance optimization
+% \item undertook \textbf{consulting assignments} on behalf of neorithm for performance optimization
 \end{itemize*}
 \vspace{5pt}
 \jobexp
@@ -182,19 +195,19 @@
 	{Core team member, enabled rapid application development with an in-house framework}
 \begin{itemize*}
 \item developed an \textbf{enterprise application development framework}, consisting of workflows, an ORM framework, message queues; and code generators for an ASP.Net based UI
-\item assisted in the development of an \textbf{ATM switch}, which could be theoretically support any ATM protocol; in particular, the Diebold and NCR protocols were developed
+\item assisted in the development of an \textbf{ATM switch}, supporting the Diebold and NCR protocols
 \item played a major role in improving the \textbf{usability} of web applications, using JavaScript to bring desktop--like features to web applications
 \end{itemize*}
 \vspace{5pt}
 \jobexp
-	{Amdocs Development Centre (India)}
+	{Amdocs Development Center (India)}
 	{http://www.amdocs.com}
 	{Aug 2006 - Oct 2007}
 	{Subject Matter Expert}
 	{Implemented Amdocs' telecom billing functionality using Unix processes}
 \begin{itemize*}
 \item worked on extending the functionality of Amdocs' `\textbf{Rater}' product for two successive versions, writing \textbf{shell scripts and C++ daemons} on Unix (Sun and AIX) systems
-\item travelled to Israel for testing, and to Russia for production support of `Rater' deployment
+\item traveled to Israel for testing, and to Russia for production support of `Rater' deployment
 \end{itemize*}
 
 %\resumedescheader{Academic Experience}
@@ -203,8 +216,16 @@
 \begin{itemize*}
 \item won many programming contests in the Mumbai University campus during engineering studies
 %\item received accolades and special bonuses while working in Amdocs DVCI
-\item listen to Hans Zimmer, ColdPlay, Beatles, Dido; read P.G. Wodehouse, John Grisham; play cricket
+\item listen to Hans Zimmer, ColdPlay, Amanda Palmer; read P.G. Wodehouse, John Grisham; play cricket
 \end{itemize*}
+
+\resumedescheader{\textbf{Links}}
+\begin{itemize*}
+\item  Code samples: \url{http://github.com/sandesh247}; \url{http://code.google.com/u/sandesh247}
+\item  Blog: \url{http://sandesh247.com/journal}
+
+\end{itemize*}
+
 
 \end{document}
 
