@@ -1,0 +1,331 @@
+% (c) 2008 Sandesh Singh <sandesh247@gmail.com> http://sandesh247.com/
+%
+% Inspiration: resume by Matthew M. Boedicker <mboedick@mboedick.org> http://mboedick.org
+%
+\documentclass[a4paper,11pt,final]{article}
+
+\usepackage{mdwlist}
+\usepackage{url}
+
+% font
+\usepackage[T1]{fontenc}
+\usepackage{tgpagella}
+
+% \usepackage{lmodern}
+\usepackage{marvosym}
+%\usepackage[bitstream-charter]{mathdesign}
+%\usepackage{gfsartemisia}
+%\usepackage[urw-garamond]{mathdesign}
+%\usepackage{fourier}
+%\usepackage[adobe-utopia]{mathdesign}
+
+%for windows fonts. use command xelatex
+%\usepackage{fontspec}
+%\fontspec[BoldFont={Gentium},BoldFeatures={Weight=4}]{Gentium}
+%\setmainfont{Gentium Basic}
+
+% \usepackage{oldstyle}
+
+% save trees ;)
+\usepackage{fullpage}
+\usepackage{savetrees}
+
+% meh ... me not a big fan of reduced linespread.
+%\linespread{1}
+
+% hyperlinks
+\usepackage[pdftex,bookmarks=true,]{hyperref}
+\hypersetup{
+  pdftitle={Resume},    % title
+  pdfauthor={Sandesh Singh},     % author
+  pdfsubject={Resume},   % subject of the document
+  pdfkeywords={keywords}, % list of keywords
+  pdfnewwindow=true,      % links in new window
+  colorlinks=false,       % false: boxed links; true: colored links
+  linkcolor=red,          % color of internal links
+  citecolor=green,        % color of links to bibliography
+  filecolor=magenta,      % color of file links
+  urlcolor=blue,          % color of external links
+}
+\urlstyle{same}
+
+% \usepackage[open, openlevel=2]{bookmark}
+
+% lighter bullets
+\renewcommand{\labelitemi}{$\cdot$}
+
+\raggedbottom
+
+% custom commands 
+\newcommand{\resumetitle}[1]{%
+  \subsection*{%
+    \large\sc{#1}%
+    \normalsize
+  }%
+  
+  %\medskip%
+}%
+
+\newcommand{\jobexp}[5]{%
+  \textbf{{#4}}
+  \hfill
+  \textbf{\href{#2}{#1}}, {#3}
+  \\\vspace{-12pt}%
+}
+
+\newcommand{\projexp}[2]{%
+  \vspace{12pt}
+  \noindent\textbf{{#1}}
+  \hfill
+  \textbf{{#2}}
+  \\\vspace{-12pt}
+}
+
+\newcommand{\eduexp}[3]{%
+\noindent\textbf{#1}\hfill{#2}\normalsize\\{#3}\vspace{3pt}%
+}
+
+\newcommand{\resumedescheader}[1]{%
+  \smallskip%
+  \resumetitle{#1}
+}%
+
+%custom environments
+\newenvironment{resumedescription}{%
+  \begin{basedescript}{\desclabelstyle{\multilinelabel}\desclabelwidth{0.15\linewidth}}{%
+      \renewcommand{\makelabel}[1]{{##1}}%
+    }%
+      \setlength{\itemsep}{0pt}
+}{%
+  \end{basedescript}%
+}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+  \centering\Large\textbf{Sandesh Singh}\normalsize \\
+  \centering{
+    \makebox[0.3\linewidth][c]{
+      \Mobilefone\hspace{1pt}
+      +1 347-687-7748}
+    \makebox[0.3\linewidth][c]{
+      \Letter\hspace{1pt}
+      \href{mailto:sandesh247@gmail.com}{me@sandesh247.com}
+    }
+    \makebox[0.3\linewidth][c]{
+      \Keyboard\hspace{1pt}
+      \url{http://sandesh247.com}
+    }
+  } \\
+  \rule[2pt]{0.99\linewidth}{.1pt}
+\end{center}
+
+\vspace{-10pt}
+\resumedescheader{Education}
+\eduexp
+	{Master's in Computer Science}
+	{Expected 2012}
+	{GPA 4.0, Stony Brook University}
+\\ \noindent \textbf{Courses} Algorithms, Natural Language Processing, Computational Biology, Words and Pictures, Concurrent and Distributed Algorithms
+\\
+\vspace{0pt}
+
+\eduexp
+	{Bachelor of Engineering (Computers)}
+	{Jun 2006}
+	{First Class, Vidyavardhini College of Engineering and Technology}
+\\ \noindent \textbf{Courses} Artificial Intelligence, Advanced Databases, Operating Systems, Computer Networks
+
+\resumedescheader{Skills}
+\begin{resumedescription}
+\item [Languages]
+\begin{itemize*}
+  \item proficient in C\#, Python, Java, Javascript, Bash
+  \item working experience with C++, Ruby
+\end{itemize*}
+
+\item [Data] 
+\begin{itemize*}
+  \item classification and mining with Weka, numpy, NLTK, learning R
+  \item data mining on Microsoft Analysis Services with MDX/DMX, SQL
+\end{itemize*}
+
+\item [Frameworks]
+\begin{itemize*}
+  \item OR Mapping frameworks (NHibernate, Microsoft Entity Framework, Gentle.Net)
+  \item Web frameworks (Google AppEngine, ASP.Net, Django, Google AJAX API, jQuery)
+\end{itemize*}
+
+\end{resumedescription}
+
+%% \vspace{-7pt}
+%% \resumedescheader{Academic Projects}
+%% \begin{itemize*}
+%%   \item implemented and tested new \textbf{text classification algorithms} in the Applied Logic Lab.
+%%   \item worked on a \textbf{classifier to detect vandal edits} on wikipedia (84\% precision, 89\% recall)
+%%   \item developed a system to \textbf{recognize the language of a
+%%     speaker from audio} (9 languages, 72\% precision, 73\% recall);
+%%     currently working under Prof. Steven Skiena towards improving and
+%%     extending the system
+%%   \item developed a highly-available, concurrent mail server in Java, extensible through web-services
+%%   \item conducted workshops \& seminars on various topics, including databases, programming and graphics
+%%     %\item developed a book exchange site, where students could request for and put up books for lending
+%%     %\item was the college web-master, maintained the website and on-line registrations for various events
+%% \end{itemize*}
+
+\resumedescheader{Projects} 
+
+\vspace{-12pt}
+\projexp{Vandalism detection in
+  Wikipedia}{Stony Brook University}
+
+\noindent We proposed a novel approach to
+detecting vandalism, modelling edits and vandal edits using a
+probabilistic context free grammer, and used the model to evaluate new
+edits. We attained 84\% precision and 89\% recall.
+
+\projexp{Pattern recognition in human speech}{Stony Brook University}
+
+\noindent I built a classifier to detect the language of a human
+speaker, by building an ngram model over various co-efficients of an
+audio signal. The classifier attained an accuracy of 72\% and recall
+of 73\%, when tested over 9 languages. I am currently working in the
+Algorithms Lab, under te guidance of Prof. Steven Skiena, to improve
+the performance of the classifier.
+
+\projexp{Language detector for textual data}{Stony Brook University}
+
+\noindent Implemented a novel algorithm, under the guidance of Yuri
+Puzis, to detect the language of a given piece of text using a trie
+based decision tree. The accuracy of the classification could be
+increased to an arbitrary level (limited by a dictionary) while
+training the decision tree.
+
+\projexp{Social network based on recommendation}{Self and friends}
+
+\noindent Given things you like and don't, one can predict who is
+similar to you. We built this recommendation based social network on
+the Google AppEngine, using Django.
+
+\projexp{MDX query optimizer}{Neorithm Technologies}
+
+\noindent Given a high level declarative user query in XML, I developed a
+translator to transform the user query into an optimized MDX query for
+a Microsoft Analysis Services OLAP warehouse.
+
+\projexp{Versioned document management datastore}{Neorithm Technologies}
+
+\noindent I developed a datastore to store files, and exposed an API
+in C\#. The datastorehad versioning support, and supported multiple
+implementations for actual storage of files. In particular, a
+filesystem based, and a relational database backends were built.
+
+\projexp{ATM switch}{Finacus Technologies} 
+
+\noindent Built a daemon to run on ATMs, and carry out transactions
+with banks using the Diebold and NCR protocols. The daemon was written
+using the Microsoft.Net framework and was extensible to support other
+protocols.
+
+\projexp{Web application development framework}{Finacus Technologies}
+
+\noindent Built a web applicaiton development framework, consisting of
+UI elements (ASP.net controls), an ORM, workflows and code
+generators. These greatly reduced the development time and provided
+independence from 3rd party vendors.
+
+\projexp{\textit{Rater} extensions}{Amdocs} 
+
+\noindent Developed various daemons and C++ extensions to support the
+telecom billing processes of Amdocs' \textit{Rater} product, on Sun
+Sparc and AIX systems. I travelled to Israel and Russia to test and
+production support of the product.
+
+\projexp{The Distributed DataBase}{Vidyavardhini College of
+  Engineering} 
+
+\noindent Developed the parser, query execution engine and GUI
+for \href{http://tddb.sf.net} {\textbf{T}he \textbf{D}istributed
+  \textbf{D}ata\textbf{B}ase (TDDB)}, a true distributed database
+built from the ground up, which conforms to the SQL-92 syntax
+
+\projexp{Email Server}{Vidyavardhini College of Engineering} 
+
+\noindent Built an email server in JSP/servlets, where the
+communication between the server and client was done through web
+services.
+
+\projexp{Wordlist trainer}{Self}
+
+\noindent Built a website to help students prep for wordlists for
+exams like the GRE. It uses and AJAX interface, and a unique approach
+to learning - \textit{revise that which you did not know the last
+  time}, taking out the complexity to manually mark ``hard'' words.
+
+\projexp{Various jQuery plugins}{Self}
+
+\noindent Built various jQuery plugins during the course of my
+employment in Neorithm Technologies, while improving usaility in web
+applications. Some of them can be seen in online repositories linked
+at the end of this resume.
+
+\resumedescheader{Career}
+\jobexp
+	{Neorithm Technologies}
+	{http://www.neorithm.com}
+	{Oct 2008 - July 2010}
+	{Technical Leader}
+	{Core team member since inception, led the technology R\&D across the company's product lines}
+\begin{itemize*}
+\item core team member since inception, I \textbf{led the technology R\&D} across the company's product lines
+\item built a rule engine to filter `interesting' transactions in a bank, which led to an \textbf{anti money laundering} product currently deployed in a bank
+\item developed a \textbf{business intelligence} product, where a financial institutions' relational data is imported into a SSAS cube, and analyzed in a pivot table built in Flex
+\item developed a C\# API to emulate a \textbf{versioned filesystem}, with pluggable storage support; in particular, a file--system and a relational database back--ends are ready
+\item oversaw the development of a \textbf{loan origination system}, where potential customers were identified and clustered based on various financial, demographic and personal parameters
+% \item undertook \textbf{consulting assignments} on behalf of neorithm for performance optimization
+\end{itemize*}
+\vspace{5pt}
+\jobexp
+	{Finacus Solutions}
+	{http://www.finacus.com}
+	{Nov 2007 - Aug 2008}
+	{Senior Software Engineer}
+	{Core team member, enabled rapid application development with an in-house framework}
+\begin{itemize*}
+\item developed an \textbf{enterprise application development framework}, consisting of workflows, an ORM framework, message queues; and code generators for an ASP.Net based UI
+\item assisted in the development of an \textbf{ATM switch}, supporting the Diebold and NCR protocols
+\item played a major role in improving the \textbf{usability} of web applications, using JavaScript to bring desktop--like features to web applications
+\end{itemize*}
+\vspace{5pt}
+\jobexp
+	{Amdocs Development Center (India)}
+	{http://www.amdocs.com}
+	{Aug 2006 - Oct 2007}
+	{Subject Matter Expert}
+	{Implemented Amdocs' telecom billing functionality using Unix processes}
+\begin{itemize*}
+\item worked on extending the functionality of Amdocs' `\textbf{Rater}' product for two successive versions, writing \textbf{shell scripts and C++ daemons} on Unix (Sun and AIX) systems
+\item traveled to Israel for testing, and to Russia for production support of `Rater' deployment
+\end{itemize*}
+
+%\resumedescheader{Academic Experience}
+
+\resumedescheader{Extracurricular Activities}
+\begin{itemize*}
+\item won many programming contests in the Mumbai University campus during engineering studies
+%\item received accolades and special bonuses while working in Amdocs DVCI
+\item listen to Hans Zimmer, ColdPlay, Amanda Palmer; read P.G. Wodehouse, John Grisham; play cricket
+\end{itemize*}
+
+\resumedescheader{\textbf{Links}}
+\begin{itemize*}
+\item  Code samples: \url{http://github.com/sandesh247}; \url{http://code.google.com/u/sandesh247}
+\item  Blog: \url{http://sandesh247.com/journal}
+
+\end{itemize*}
+
+
+\end{document}
+
