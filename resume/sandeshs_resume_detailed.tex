@@ -9,7 +9,7 @@
 
 % font
 \usepackage[T1]{fontenc}
-%\usepackage{tgpagella}
+\usepackage{tgpagella}
 
 % \usepackage{lmodern}
 \usepackage{marvosym}
@@ -219,15 +219,15 @@
 \projexp{Vandalism detection in
   Wikipedia}{Stony Brook University}
 
-\noindent We proposed a novel approach to
-detecting vandalism, modeling edits and vandal edits using a
-probabilistic context free grammar, and used the model to evaluate new
-edits. We attained 84\% precision and 89\% recall.
+\noindent We proposed an NLP approach to detecting vandalism, by modeling
+edits and vandal edits using a probabilistic context free grammar, and
+used the model to evaluate new edits. We attained 84\% precision and
+89\% recall.
 
 \projexp{Pattern recognition in human speech}{Stony Brook University}
 
 \noindent I built a classifier to detect the language of a human
-speaker, by building an ngram model over various co-efficients of an
+speaker, by building an ngram model over various features of an
 audio signal. The classifier attained an accuracy of 72\% and recall
 of 73\%, when tested over 9 languages. I am currently working in the
 Algorithms Lab, under the guidance of Prof. Steven Skiena, to improve
@@ -255,13 +255,14 @@ client. Instead of serving full pages, the server would only hand out
 a diff of the new page with respect to the older page, and an injected
 javascript on the client would merge the changes.
 
-\projexp{Optimized MDX query engine}{Neorithm Technologies}
+\projexp{Optimized MDX query generator}{Neorithm Technologies}
 
-\noindent Given a high level declarative user query in XML, I developed a
-translator to transform the user query into an optimized MDX query for
-a Microsoft Analysis Services OLAP warehouse.
+\noindent Given a high level declarative user query in XML, I
+developed a translator to transform the user query into an optimized
+MDX query for a Microsoft Analysis Services OLAP warehouse. This was
+part of an Anti-Money Laundering product, whose development I led.
 
-\projexp{Versioned document management datastore}{Neorithm Technologies}
+\projexp{Versioned file storage engine}{Neorithm Technologies}
 
 \noindent I developed a datastore to store files, and exposed an API
 in C\#. The datastore had versioning support, and supported multiple
@@ -286,8 +287,8 @@ independence from 3rd party vendors.
 
 \noindent Developed various daemons and C++ extensions to support the
 telecom billing processes of Amdocs' \textit{Rater} product, on Sun
-Sparc and AIX systems. I traveled to Israel and Russia to test and
-production support of the product.
+Sparc and AIX systems. I also traveled to Israel and Russia for
+testing and production support.
 
 \projexp{The Distributed DataBase}{Vidyavardhini College of
   Engineering} 
@@ -305,17 +306,17 @@ services.
 
 \projexp{Wordlist trainer}{Self}
 
-\noindent Built a website \url{http://wl.sandesh247.com} to help
-students prep for wordlists for exams like the GRE. It uses an AJAX
-interface which communicates with the backend using a REST-api, and
-has unique approach to learning - \textit{revise that which you did
-not know the last time}, taking out the complexity to manually mark
-``hard'' words.
+\noindent Built a web application \url{http://wl.sandesh247.com} to
+help students prep for wordlists for exams like the GRE. It uses an
+AJAX interface which communicates with the backend using a REST-api,
+and has unique approach to learning - \textit{revise that which you
+  did not know the last time}, taking out the tedium to manually
+mark ``hard'' words.
 
 \projexp{Various jQuery plugins}{Self}
 
 \noindent Built various jQuery plugins during the course of my
-employment in Neorithm Technologies, while improving usaility in web
+employment in Neorithm Technologies, while improving usability in web
 applications. Some of them can be seen in online repositories linked
 at the end of this resume.
 
@@ -323,10 +324,13 @@ at the end of this resume.
 
 \resumedescheader{Extracurricular Activities}
 \begin{itemize*}
-\item Technical adviser and webmaster for the student's chapter of the Computer Society of India
-\item Won many programming contests in the Mumbai University campus during engineering studies
-%\item Received accolades and special bonuses while working in Amdocs DVCI
-\item Listen to Hans Zimmer, ColdPlay, Amanda Palmer; read P.G. Wodehouse, John Grisham; play cricket
+\item Technical adviser and webmaster for the student's chapter of the
+  Computer Society of India
+\item Won many programming contests in the Mumbai University campus
+  during engineering studies
+\item Received accolades and cash bonuses while working in Amdocs DVCI
+\item Listen to Hans Zimmer, ColdPlay, Amanda Palmer; read
+  P.G. Wodehouse, John Grisham; play cricket
 \end{itemize*}
 
 \resumedescheader{Links}
@@ -334,7 +338,6 @@ at the end of this resume.
 \item  Code samples: \url{http://github.com/sandesh247}; \url{http://code.google.com/u/sandesh247}
 \item  Blog: \url{http://sandesh247.com/journal}
 \end{itemize*}
-
 
 \end{document}
 
