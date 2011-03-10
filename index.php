@@ -24,8 +24,8 @@
         <div class="yui-u first main">
           <!-- TOP MAIN -->
 
-          <p>Here's my <a href="resume/sandeshs_resume.pdf">resume</a>. You may
-          want the <a href="resume/sandeshs_resume.tex">source</a>.</p>
+          <p>Here's my <a href="resume/sandeshs_resume_detailed.pdf">resume</a>. You may
+          want the <a href="resume/sandeshs_resume_detailed.tex">source</a>.</p>
 
           <p>You may want to visit my <a rel="me" href="./journal/">blog</a>, I am usually more active there.</p>
 
