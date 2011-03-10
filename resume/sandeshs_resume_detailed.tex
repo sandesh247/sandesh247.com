@@ -128,7 +128,8 @@
 	{Master's in Computer Science}
 	{Expected Spring 2012}
 	{GPA 4.0, Stony Brook University}
-\\ \noindent \textbf{Courses} Algorithms, Natural Language Processing, Computational Biology, Words and Pictures, Concurrent and Distributed Algorithms
+\\ \noindent \textbf{Courses}\quad Algorithms, Natural Language Processing, Computational Biology, Words and Pictures, Concurrent and Distributed Algorithms.
+\\ \noindent \textbf{Master's Project}\quad Pattern recognition in human speech, under the advisement of Prof. Steven Skiena
 \\
 \vspace{-5pt}
 
@@ -142,20 +143,26 @@
 \begin{resumedescription}
 \item [Languages]
 \begin{itemize*}
-  \item proficient in C\#, Python, Java, Javascript, Bash
-  \item working experience with C++, Ruby
+  \item Proficient in C\#, Python, Java, C++, Javascript, Bash
 \end{itemize*}
 
 \item [Data] 
 \begin{itemize*}
-  \item classification and mining with Weka, numpy, NLTK, learning R
-  \item data mining on Microsoft Analysis Services with MDX/DMX, SQL
+  \item Classification and mining with Weka, numpy, NLTK, learning R
+  \item Data mining on Microsoft Analysis Services with MDX/DMX, SQL
+\end{itemize*}
+
+\item [Cloud] 
+\begin{itemize*}
+  \item Google AppEngine applications, using webpy and Django
+  \item Amazon EC2 for distribution (via Hadoop)
 \end{itemize*}
 
 \item [Frameworks]
 \begin{itemize*}
   \item OR Mapping frameworks (NHibernate, Microsoft Entity Framework, Gentle.Net)
-  \item Web frameworks (Google AppEngine, ASP.Net, Django, Google AJAX API, jQuery)
+  \item Social frameworks (GData Python Client, Facebook applications)
+  \item Web frameworks (ASP.Net, Django, Google AJAX API, jQuery)
 \end{itemize*}
 
 \end{resumedescription}
@@ -175,6 +182,7 @@
 %%     %\item was the college web-master, maintained the website and on-line registrations for various events
 %% \end{itemize*}
 
+\vspace{-15pt}
 \resumedescheader{Career}
 
 \vspace{-12pt}
@@ -219,75 +227,74 @@
 \projexp{Vandalism detection in
   Wikipedia}{Stony Brook University}
 
-\noindent We proposed an NLP approach to detecting vandalism, by modeling
-edits and vandal edits using a probabilistic context free grammar, and
-used the model to evaluate new edits. We attained 84\% precision and
-89\% recall.
+\noindent Hypothesised and validated an NLP approach to detecting
+vandalism, by modeling good and vandal edits using a probabilistic
+context free grammar, and evaluating new edits, attaining 84\%
+precision and 89\% recall.
 
 \projexp{Pattern recognition in human speech}{Stony Brook University}
 
-\noindent I built a classifier to detect the language of a human
-speaker, by building an ngram model over various features of an
-audio signal. The classifier attained an accuracy of 72\% and recall
-of 73\%, when tested over 9 languages. I am currently working in the
-Algorithms Lab, under the guidance of Prof. Steven Skiena, to improve
-the performance of the classifier.
+\noindent Built a classifier to detect the language of a human
+speaker, by building an ngram model over various features of an audio
+signal. The classifier attained an accuracy of 72\% and recall of
+73\%, when tested over 9 languages.
 
 \projexp{Language detector for textual data}{Stony Brook University}
 
 \noindent Implemented a novel algorithm, under the guidance of Yuri
-Puzis, to detect the language of a given piece of text using a trie
-based decision tree. The accuracy of the classification could be
-increased to an arbitrary level (limited by a dictionary) while
+Puzis, to \textbf{detect the language of a given piece of text using a
+  trie based decision tree}. The accuracy of the classification could
+be increased to an arbitrary level -- limited by a dictionary -- while
 training the decision tree.
 
 \projexp{Social network based on recommendation}{Self and friends}
 
-\noindent Given things you like and don't, one can predict who is
-similar to you. We built this recommendation based social network on
-the Google AppEngine, using Django.
+\noindent Built a \textbf{recommendation based social network on the
+  Google AppEngine}, using Django. Given things one likes and doesn't
+like, people whose likes were most similar were matched up.
 
 \projexp{Differential AJAX Server}{Neorithm Technologies}
 
-\noindent Wrote ASP.net modules to AJAX-ify legacy ASP.net applications,
-based on the `diff' of the pages being transmitted to the
-client. Instead of serving full pages, the server would only hand out
-a diff of the new page with respect to the older page, and an injected
-javascript on the client would merge the changes.
+\noindent \textbf{Modified the ASP.Net pipeline to AJAX-ify legacy
+  ASP.net applications}, based on the `diff' of the pages being
+transmitted to the client. Built custom modules such that the server
+would only hand out a diff of the new page with respect to the older
+page, and an injected javascript on the client would merge the
+changes.
 
 \projexp{Optimized MDX query generator}{Neorithm Technologies}
 
-\noindent Given a high level declarative user query in XML, I
-developed a translator to transform the user query into an optimized
-MDX query for a Microsoft Analysis Services OLAP warehouse. This was
-part of an Anti-Money Laundering product, whose development I led.
+\noindent Developed a \textbf{translator to generate an optimized MDX
+  query} for a given high level declarative user query in XML, which
+was used to query a Microsoft Analysis Services OLAP warehouse. This
+was part of an Anti-Money Laundering product, whose development I led.
 
 \projexp{Versioned file storage engine}{Neorithm Technologies}
 
-\noindent I developed a datastore to store files, and exposed an API
-in C\#. The datastore had versioning support, and supported multiple
-implementations for actual storage of files. In particular, a
+\noindent Developed a \textbf{datastore to store files}, and exposed
+an API in C\#. The datastore had versioning support, and supported
+multiple implementations for actual storage of files. In particular, a
 file-system based, and a relational database backends were built.
 
 \projexp{ATM switch}{Finacus Technologies} 
 
-\noindent Built a daemon to run on ATMs, and carry out transactions
-with banks using the Diebold and NCR protocols. The daemon was written
-using the Microsoft.Net framework and was extensible to support other
-protocols.
+\noindent Built a \textbf{daemon to run on ATMs, and carry out
+  transactions with banks} using the Diebold and NCR protocols. The
+daemon was written using the Microsoft.Net framework and was
+extensible to support other protocols.
 
 \projexp{Web application development framework}{Finacus Technologies}
 
-\noindent Built a web application development framework, consisting of
-UI elements (ASP.net controls), an ORM, workflows and code
-generators. These greatly reduced the development time and provided
-independence from 3rd party vendors.
+\noindent Built a \textbf{web application development framework}, consisting of
+UI elements in the form of ASP.net controls, an ORM, workflows and
+code generators. These greatly reduced the development time and
+provided independence from 3rd party vendors.
 
 \projexp{\textit{Rater} extensions}{Amdocs} 
 
 \noindent Developed various daemons and C++ extensions to support the
 telecom billing processes of Amdocs' \textit{Rater} product, on Sun
-Sparc and AIX systems. I also traveled to Israel and Russia for
+Sparc and AIX systems. Also traveled to Israel and Russia for
 testing and production support.
 
 \projexp{The Distributed DataBase}{Vidyavardhini College of
@@ -295,8 +302,8 @@ testing and production support.
 
 \noindent Developed the parser, query execution engine and GUI for
 \textbf{T}he \textbf{D}istributed \textbf{D}ata\textbf{B}ase
-(\url{http://tddb.sf.net}), a true distributed database built from the
-ground up, which conforms to the SQL-92 syntax.
+(\url{http://tddb.sf.net}), \textbf{a true distributed database built
+  from the ground up}, which conforms to the SQL-92 syntax.
 
 \projexp{Email Server}{Vidyavardhini College of Engineering} 
 
@@ -307,18 +314,18 @@ services.
 \projexp{Wordlist trainer}{Self}
 
 \noindent Built a web application \url{http://wl.sandesh247.com} to
-help students prep for wordlists for exams like the GRE. It uses an
-AJAX interface which communicates with the backend using a REST-api,
-and has unique approach to learning - \textit{revise that which you
-  did not know the last time}, taking out the tedium to manually
-mark ``hard'' words.
+help students prepare for wordlists for exams like the GRE. It uses an
+\textbf{AJAX interface which communicates with the backend using a
+  REST-api}, and has unique approach to learning - \textit{revise that
+  which you did not know the last time}, taking out the tedium to
+manually mark ``hard'' words.
 
 \projexp{Various jQuery plugins}{Self}
 
-\noindent Built various jQuery plugins during the course of my
-employment in Neorithm Technologies, while improving usability in web
-applications. Some of them can be seen in online repositories linked
-at the end of this resume.
+\noindent Built various \textbf{jQuery plugins} during the course of
+my employment in Neorithm Technologies, while improving usability in
+web applications. Some of them can be seen in online repositories
+linked at the end of this resume.
 
 %\resumedescheader{Academic Experience}
 
