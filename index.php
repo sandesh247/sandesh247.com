@@ -25,18 +25,25 @@
           <!-- TOP MAIN -->
 
           <p>Here's my <a href="resume/sandeshs_resume_detailed.pdf">resume</a>. You may
-          want the <a href="resume/sandeshs_resume_detailed.tex">source</a>.</p>
+          want the <a href="resume/sandeshs_resume_detailed.tex">source</a>. There's
+          also a <a href="resume/sandeshs_resume_detailed.txt">plain text</a> version.</p>
 
           <p>You may want to visit my <a rel="me" href="./journal/">blog</a>, I am usually more active there.</p>
 
-          <p>I currently work at <a href="http://www.neorithm.com/">neorithm</a>. I've previously worked at:</p>
+          <p>I am currently a master's student at <a href="http://www.cs.stonybrook.edu/">Stony Brook University</a>. I've previously worked at:</p>
           <ul>
+            <li><a href="https://kindle.amazon.com/">Kindle Content Quality, Amazon Inc. (Intern)</a></li>
+            <li><a href="http://www.neorithm.com">Neorithm</a></li>
             <li><a href="http://www.finacus.co.in/">Finacus</a></li>
             <li><a href="http://www.amdocs.com/">Amdocs</a><br /></li>
           </ul>
 
           <!-- spacer -->
           <p />
+
+          <p>
+            <b>Anonymous feedback is good. <a href="http://sandesh247.com/feedback.php">Give me some</a>.</b>
+          </p>
 
           <h4>Code</h4>
 
