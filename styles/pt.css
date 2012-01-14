@@ -1,0 +1,9 @@
+* {
+	text-align: justify;
+	font-family: monospace;
+}
+
+#main_content {
+	margin: auto;
+	width: 72ex;
+}
