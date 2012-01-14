@@ -113,7 +113,7 @@
           <div class="rss_reader" uri=
           "http://feeds2.feedburner.com/OneMeOneKeyboard">
             <div class="hiliteimp feed_title">
-              <a rel="me" href="http://sandesh247.com/journal">Blog</a>
+              <a rel="me" href="http://journal.sandesh247.com/">Blog</a>
             </div>
 
             <div class="items bghilite"></div>
